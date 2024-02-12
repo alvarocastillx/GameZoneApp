@@ -1,0 +1,133 @@
+{
+  "name": "button_iniciar_sesion",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "71:2",
+    "version": "5133652505",
+    "component-id": "297112d5e46ae037177e0c7cea68f1c9b231b4e4"
+  },
+  "default": "ButtonIniciarSesion",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Iniciar sesión >"
+      }
+    ],
+    "modes": {
+      "ButtonIniciarSesion": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "15.0",
+            "tap-handler": "$onLoginClick",
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Iniciar sesión >"
+            ]
+          },
+          {
+            "id": "Iniciar sesión >",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "228.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "annotated-text-content": "$textLoginButton",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Merriweather"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onLoginClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "textLoginButton": {
+      "data-type": "annotated-text-content",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ButtonIniciarSesion",
+      "size": {
+        "width": 400.0,
+        "height": 38.0
+      },
+      "parameters": {
+        "textLoginButton": {
+          "text": "Iniciar sesión >",
+          "annotated-text-span-list": [
+            {
+              "span-start": 0,
+              "span-length": 15,
+              "annotated-text-style": {
+                "text-size": 21.0
+              }
+            },
+            {
+              "span-start": 15,
+              "span-length": 1,
+              "annotated-text-style": {
+                "text-size": 21.0,
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "137.0",
+                  "saturation": "0.8737864077669903",
+                  "value": "0.807843137254902"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

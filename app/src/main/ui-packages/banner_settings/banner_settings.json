@@ -1,0 +1,122 @@
+{
+  "name": "banner_settings",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "65:4",
+    "version": "5133481311",
+    "component-id": "0e7863f1c5dfaeb774aa73de3725acbb326e7626"
+  },
+  "default": "BannerSettings",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "LineaSeparatoria"
+      },
+      {
+        "type": "text",
+        "id": "TextConfig"
+      }
+    ],
+    "modes": {
+      "BannerSettings": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "LineaSeparatoria",
+              "TextConfig"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "LineaSeparatoria",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "40.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "430.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "linea_separatoria.svg"
+          },
+          {
+            "id": "TextConfig",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "428.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Configuración",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Merriweather"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "BannerSettings",
+      "size": {
+        "width": 430.0,
+        "height": 82.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

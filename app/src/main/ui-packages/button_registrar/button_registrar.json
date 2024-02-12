@@ -1,0 +1,133 @@
+{
+  "name": "button_registrar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "72:3",
+    "version": "5133653180",
+    "component-id": "fbedd28b6f7ed62b7b503ddcc8acc8dfa929ea22"
+  },
+  "default": "ButtonRegistrar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Registrarse >"
+      }
+    ],
+    "modes": {
+      "ButtonRegistrar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "15.0",
+            "tap-handler": "$onRegisterClick",
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Registrarse >"
+            ]
+          },
+          {
+            "id": "Registrarse >",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "206.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "annotated-text-content": "$textRegisterButton",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.2569999694824219",
+            "typeface": "Merriweather"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onRegisterClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "textRegisterButton": {
+      "data-type": "annotated-text-content",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ButtonRegistrar",
+      "size": {
+        "width": 400.0,
+        "height": 38.0
+      },
+      "parameters": {
+        "textRegisterButton": {
+          "text": "Registrarse >",
+          "annotated-text-span-list": [
+            {
+              "span-start": 0,
+              "span-length": 12,
+              "annotated-text-style": {
+                "text-size": 21.0
+              }
+            },
+            {
+              "span-start": 12,
+              "span-length": 1,
+              "annotated-text-style": {
+                "text-size": 21.0,
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "137.0",
+                  "saturation": "0.8737864077669903",
+                  "value": "0.807843137254902"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
