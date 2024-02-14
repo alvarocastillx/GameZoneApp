@@ -2,46 +2,43 @@ package com.acasloa946.finalproject.userInterface.LoginScreen
 
 import android.annotation.SuppressLint
 import android.widget.Toast
-import androidx.compose.foundation.background
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.OutlinedTextField
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Scaffold
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.acasloa946.finalproject.bannerlogin.BannerLogin
-import com.acasloa946.finalproject.buttoniniciarsesion.ButtonIniciarSesion
-import com.acasloa946.finalproject.buttonregistrar.ButtonRegistrar
+import com.acasloa946.finalproject.R
 import com.acasloa946.finalproject.footernavbar.FooterNavBar
-import com.acasloa946.finalproject.frameinfo.FrameInfo
-import com.acasloa946.finalproject.framelogin.ButtonLogin
-import com.acasloa946.finalproject.framelogin.FrameLogin
-import com.acasloa946.finalproject.framelogin.IniciarSesiN
-import com.acasloa946.finalproject.framelogin.LineaSeparatoria
-import com.acasloa946.finalproject.framelogin.TextFieldMail
-import com.acasloa946.finalproject.framelogin.TextFieldPassw
-import com.acasloa946.finalproject.framelogin.TopLevel
+import com.acasloa946.finalproject.loginscreen.BannerLogin
+import com.acasloa946.finalproject.loginscreen.ButtonLogin
+import com.acasloa946.finalproject.loginscreen.FrameLogin
+import com.acasloa946.finalproject.loginscreen.ImageGZ
+import com.acasloa946.finalproject.loginscreen.IniciarSesiN
+import com.acasloa946.finalproject.loginscreen.LoginText
+import com.acasloa946.finalproject.loginscreen.TextConfig
+import com.acasloa946.finalproject.loginscreen.TextFieldMail
+import com.acasloa946.finalproject.loginscreen.TextFieldPassw
+import com.acasloa946.finalproject.loginscreen.TopLevel
+import com.acasloa946.finalproject.loginscreen.Wallpaper
 import com.acasloa946.finalproject.navigation.Routes
-import com.acasloa946.finalproject.userInterface.SettingsScreen.ViewmodelSettings
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
@@ -65,6 +62,9 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
                         navController.navigate(Routes.SettingsScreeen.route)
+                    },
+                    onHomeClick = {
+                        navController.navigate(Routes.HomeScreen.route)
                     })
 
             }
@@ -73,13 +73,11 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
         // Contenido de tu pantalla principal
         Column(
             modifier = Modifier
-                .fillMaxSize()
-                .background(Color.White),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .fillMaxSize().verticalScroll(rememberScrollState(10000), false, reverseScrolling = true),
+            horizontalAlignment = Alignment.CenterHorizontally,
 
         ) {
-            BannerLogin(modifier = Modifier.size(430.dp, 82.dp))
-            FrameLoginComponent(modifier = Modifier.size(429.dp, 805.dp), loginViewmodel = loginViewmodel, onLoginClick = {
+            LoginScreenComponent(modifier = Modifier.size(0.dp, 866.dp), loginViewmodel = loginViewmodel, onLoginClick = {
                 loginViewmodel.login(onSuccess = {
                     if (loginViewmodel.admin){
                         navController.navigate(Routes.AdminScreen.route)
@@ -93,72 +91,155 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
                     })
             })
 
-
         }
     }
 }
 
 
+
+
 @Composable
-fun FrameLoginComponent(
+fun LoginScreenComponent(
     modifier: Modifier = Modifier,
     onLoginClick: () -> Unit = {},
-    loginViewmodel: LoginViewmodel
+    loginViewmodel: LoginViewmodel,
 ) {
-
-
     TopLevel(modifier = modifier) {
-        LineaSeparatoria()
-        TextFieldMail {
-            androidx.compose.material3.OutlinedTextField(
-                value = loginViewmodel.email, onValueChange = {
-                    loginViewmodel.changeEmail(it)
-                },
-                colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = Color(0xFF1ACE4D),
-                    unfocusedBorderColor = Color.Black,
-                    focusedLabelColor = Color.White,
-                    unfocusedLabelColor = Color.White,
-                    unfocusedTextColor = Color.Black,
-                    focusedTextColor = Color.Black
-                ),
-                placeholder = {
-                    Text("Introduzca su correo electrónico", color = Color.Black, fontSize = 15.sp)
-                },
-                modifier = Modifier.fillMaxWidth()
+        BannerLogin(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.5.dp,
+                    y = -315.5.dp
+                )
             )
-        }
-        TextFieldPassw {
-            androidx.compose.material3.OutlinedTextField(
-                value = loginViewmodel.passw, onValueChange = {
-                    loginViewmodel.changePassw(it)
-                },
-                colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = Color(0xFF1ACE4D),
-                    unfocusedBorderColor = Color.Black,
-                    focusedLabelColor = Color.White,
-                    unfocusedLabelColor = Color.White,
-                    unfocusedTextColor = Color.Black,
-                    focusedTextColor = Color.Black
-                ),
-                placeholder = {
-                    Text("Introduzca su contraseña", color = Color.Black, fontSize = 15.sp)
-                },
-                modifier = Modifier.fillMaxWidth(),
-                visualTransformation = PasswordVisualTransformation()
-                //TODO: Mostrar contraseña
-            )
-        }
-        ButtonLogin(onLoginClick = onLoginClick) {
-            IniciarSesiN(
+        ) {
+            Wallpaper(
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.Center,
                     offset = DpOffset(
-                        x = 0.5.dp,
+                        x = 0.0.dp,
                         y = 0.0.dp
                     )
                 )
             )
+            ImageGZ(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = -0.25.dp,
+                        y = -23.718307495117188.dp
+                    )
+                )
+            ) {
+
+                Image(painter = painterResource(id = R.drawable.bannerhomescreen), contentDescription = null, modifier = Modifier.fillMaxSize())
+            }
+        }
+        FrameLogin(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = -0.5.dp,
+                    y = 104.0.dp
+                )
+            )
+        ) {
+            TextFieldMail(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = 1.0.dp,
+                        y = -104.0.dp
+                    )
+                )
+            ) {
+                androidx.compose.material3.OutlinedTextField(
+                    value = loginViewmodel.email, onValueChange = {
+                        loginViewmodel.changeEmail(it)
+                    },
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF1ACE4D),
+                        unfocusedBorderColor = Color.Black,
+                        focusedLabelColor = Color.White,
+                        unfocusedLabelColor = Color.White,
+                        unfocusedTextColor = Color.Black,
+                        focusedTextColor = Color.Black
+                    ),
+                    placeholder = {
+                        Text("Introduzca su correo electrónico", color = Color.Black, fontSize = 15.sp)
+                    },
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+            TextFieldPassw(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = 1.0.dp,
+                        y = -1.0.dp
+                    )
+                )
+            ) {
+                androidx.compose.material3.OutlinedTextField(
+                    value = loginViewmodel.passw, onValueChange = {
+                        loginViewmodel.changePassw(it)
+                    },
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF1ACE4D),
+                        unfocusedBorderColor = Color.Black,
+                        focusedLabelColor = Color.White,
+                        unfocusedLabelColor = Color.White,
+                        unfocusedTextColor = Color.Black,
+                        focusedTextColor = Color.Black
+                    ),
+                    placeholder = {
+                        Text("Introduzca su contraseña", color = Color.Black, fontSize = 15.sp)
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                    visualTransformation = PasswordVisualTransformation()
+                    //TODO: Mostrar contraseña
+                )
+            }
+            ButtonLogin(
+                onLoginClick = onLoginClick,
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = -1.5.dp,
+                        y = 92.0.dp
+                    )
+                )
+            ) {
+                IniciarSesiN(
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = 0.5.dp,
+                            y = 0.0.dp
+                        )
+                    )
+                )
+            }
+            LoginText(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = 0.0.dp,
+                        y = -251.0.dp
+                    )
+                )
+            ) {
+                TextConfig(
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = 0.5.dp,
+                            y = 0.0.dp
+                        )
+                    )
+                )
+            }
         }
     }
 }

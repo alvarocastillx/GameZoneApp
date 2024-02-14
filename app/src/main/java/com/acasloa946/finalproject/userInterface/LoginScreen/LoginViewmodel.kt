@@ -35,11 +35,6 @@ class LoginViewmodel : ViewModel() {
     }
 
 
-
-
-
-
-
     fun login(onSuccess: () -> Unit, onFailure : () -> Unit){
         viewModelScope.launch {
             try {

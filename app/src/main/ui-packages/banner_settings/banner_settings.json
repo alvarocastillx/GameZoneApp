@@ -4,9 +4,9 @@
   "source-key": {
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
-    "node": "65:4",
-    "version": "5133481311",
-    "component-id": "0e7863f1c5dfaeb774aa73de3725acbb326e7626"
+    "node": "160:157",
+    "version": "5154342268",
+    "component-id": "065d9972c17a35eec941470e7531b533ce5a1cf7"
   },
   "default": "BannerSettings",
   "design": {
@@ -17,12 +17,12 @@
         "root": "true"
       },
       {
-        "type": "vector",
-        "id": "LineaSeparatoria"
+        "type": "image",
+        "id": "WallPaper"
       },
       {
         "type": "text",
-        "id": "TextConfig"
+        "id": "TextRegister"
       }
     ],
     "modes": {
@@ -32,43 +32,38 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "LineaSeparatoria",
-              "TextConfig"
+              "WallPaper",
+              "TextRegister"
             ],
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.8509803921568627"
-            },
             "clip-content": "false"
           },
           {
-            "id": "LineaSeparatoria",
+            "id": "WallPaper",
             "alignment": {
               "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
+                "attachment": "start",
+                "offset": "-1.0"
               },
               "vertical": {
-                "attachment": "center",
-                "offset": "40.5"
+                "attachment": "start",
+                "offset": "0.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "430.0"
+                "value": "429.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "1.0"
+                "value": "89.0"
               }
             },
-            "vector-content": "linea_separatoria.svg"
+            "image-content": "wall_paper.png",
+            "scale": "cover"
           },
           {
-            "id": "TextConfig",
+            "id": "TextRegister",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
@@ -76,7 +71,7 @@
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "-0.5"
               }
             },
             "size-constraints": {
@@ -88,20 +83,21 @@
                 "sizing-mode": "shrink"
               }
             },
-            "font-weight": "900.0",
+            "font-weight": "700.0",
             "color": {
               "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
             },
-            "text-content": "Configuración",
+            "text-content": "CONFIGURACIÓN",
             "overflow": "visible",
             "max-lines": "-1",
             "text-align-vertical": "center",
             "text-size": "30.0",
-            "line-height": "1.2569999694824219",
-            "typeface": "Merriweather"
+            "letter-spacing": "3.3",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
           }
         ]
       }
@@ -111,8 +107,8 @@
     {
       "design": "BannerSettings",
       "size": {
-        "width": 430.0,
-        "height": 82.0
+        "width": 428.0,
+        "height": 89.0
       }
     }
   ],

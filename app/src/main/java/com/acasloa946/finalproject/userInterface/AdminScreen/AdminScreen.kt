@@ -34,18 +34,20 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.text.isDigitsOnly
 import androidx.navigation.NavController
-import com.acasloa946.finalproject.adminpanelframe.AdminPanel
-import com.acasloa946.finalproject.adminpanelframe.BotonEspec
-import com.acasloa946.finalproject.adminpanelframe.CheckBox
-import com.acasloa946.finalproject.adminpanelframe.FrameCheckBox
-import com.acasloa946.finalproject.adminpanelframe.FrameOutlinedName
-import com.acasloa946.finalproject.adminpanelframe.FrameOutlinedPublisher
-import com.acasloa946.finalproject.adminpanelframe.FrameOutlinedYear
-import com.acasloa946.finalproject.adminpanelframe.Guardar
-import com.acasloa946.finalproject.adminpanelframe.Line1
-import com.acasloa946.finalproject.adminpanelframe.TextAdmin
-import com.acasloa946.finalproject.adminpanelframe.TextCheckBox
-import com.acasloa946.finalproject.adminpanelframe.TopLevel
+import com.acasloa946.finalproject.pantallaadmin.BannerText
+import com.acasloa946.finalproject.pantallaadmin.BotonEspec
+import com.acasloa946.finalproject.pantallaadmin.CheckBox
+import com.acasloa946.finalproject.pantallaadmin.FrameCheckBox
+import com.acasloa946.finalproject.pantallaadmin.FrameOutlinedName
+import com.acasloa946.finalproject.pantallaadmin.FrameOutlinedPrice
+import com.acasloa946.finalproject.pantallaadmin.FrameOutlinedPublisher
+import com.acasloa946.finalproject.pantallaadmin.FrameOutlinedYear
+import com.acasloa946.finalproject.pantallaadmin.Guardar
+import com.acasloa946.finalproject.pantallaadmin.LineDivisoria
+import com.acasloa946.finalproject.pantallaadmin.PantallaAdmin
+import com.acasloa946.finalproject.pantallaadmin.TextCheckBox
+import com.acasloa946.finalproject.pantallaadmin.TopLevel
+import com.google.relay.compose.BoxScopeInstance.boxAlign
 
 
 @Composable
@@ -54,6 +56,7 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
     val publisher = viewmodelAdmin.publisher
     val year = viewmodelAdmin.year
     val indie = viewmodelAdmin.indie
+    val price = viewmodelAdmin.price
 
     val context = LocalContext.current
 
@@ -69,17 +72,33 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            AdminPanelFrameComponent(modifier = Modifier.size(430.dp,885.dp),
-                onLoginClick = {
-                    viewmodelAdmin.añadirBDD(name,publisher,year,indie,context, onSuccess = {
-                        Toast.makeText(context,"El videojuego se ha introducido correctamente",Toast.LENGTH_SHORT).show()
-                    }, onFailure = {
-                        Toast.makeText(context,"El videojuego no ha podido introducirse.",Toast.LENGTH_SHORT).show()
-                    })
 
-                },
-                name,publisher,year.toString(),indie,
-                viewmodelAdmin)
+            PantallaAdminComponent(modifier = Modifier.size(430.dp,834.dp), onSvClick = {
+                viewmodelAdmin.añadirBDD(name, publisher, year, indie, context,price, onSuccess = {
+                    Toast.makeText(
+                        context,
+                        "El videojuego se ha guardado correctamente",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    viewmodelAdmin.changeName("")
+                    viewmodelAdmin.changeIndie(false)
+                    viewmodelAdmin.changePublisher("")
+                    viewmodelAdmin.changePrice("")
+                    viewmodelAdmin.changeYear(0)
+
+
+
+                }, onFailure = {
+                    Toast.makeText(
+                        context,
+                        "El videojuego no ha podido guardarse.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                )
+            },name,publisher,year.toString(),indie,price.toString(),viewmodelAdmin)
+                
+
         }
         Box(
             modifier = Modifier
@@ -93,182 +112,372 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
     }
 }
 
+
 @Composable
-fun AdminPanelFrameComponent(
+fun PantallaAdminComponent(
     modifier: Modifier = Modifier,
-    onLoginClick: () -> Unit = {},
+    onSvClick: () -> Unit = {},
+    name: String,
+    publisher:String,
+    year:String,
+    indie:Boolean,
+    price:String,
+    viewmodelAdmin: ViewmodelAdmin
+) {
+    TopLevel(modifier = modifier) {
+        BotonEspec(
+            onSvClick = onSvClick,
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = 349.0.dp
+                )
+            )
+        ) {
+            Guardar(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = -0.5.dp,
+                        y = 0.0.dp
+                    )
+                )
+            )
+        }
+        CheckBox(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.5.dp,
+                    y = 235.0.dp
+                )
+            )
+        ) {
+            TextCheckBox()
+            FrameCheckBox {
+                androidx.compose.material3.Switch(
+                    checked = indie, onCheckedChange = { viewmodelAdmin.changeIndie(it) },
+                    modifier = Modifier
+                        .width(52.dp)
+                        .height(32.dp)
+                        .background(
+                            color = Color(0xFFFFFFFF),
+                            shape = RoundedCornerShape(size = 100.dp)
+                        )
+                        .padding(start = 2.dp, top = 2.dp, end = 2.dp, bottom = 2.dp),
+                    colors = androidx.compose.material3.SwitchDefaults.colors(checkedTrackColor = Color(0xFF1ACE4D)))
+            }
+        }
+        FrameOutlinedPrice(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = 112.0.dp
+                )
+            )
+        ) {
+            //////////////////////PRICE/////////////////////////
+            androidx.compose.material3.OutlinedTextField(value = price.toString(), onValueChange = {
+                viewmodelAdmin.changePrice(it)
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Precio del videojuego", color = Color.Black, fontSize = 13.sp)
+                },
+                modifier = Modifier.height(300.dp))
+        }
+        FrameOutlinedYear(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -12.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = year, onValueChange = {
+                try {
+                    if (it.isDigitsOnly() || it != "") {
+                        viewmodelAdmin.changeYear(it.toInt())
+                    }
+                }
+                catch (e:Exception) {
+                    Log.d("","")
+                }
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Año de lanzamiento", color = Color.Black, fontSize = 13.sp)
+                },
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    keyboardType = KeyboardType.Number
+                ),
+                modifier = Modifier.fillMaxSize())
+        }
+        FrameOutlinedPublisher(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -136.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = publisher, onValueChange = {
+                viewmodelAdmin.changePublisher(it)
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Publisher del videojuego", color = Color.Black, fontSize = 13.sp)
+                },
+                modifier = Modifier.height(300.dp))
+        }
+        FrameOutlinedName(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -260.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = name, onValueChange = {
+                viewmodelAdmin.changeName(it)
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Nombre del videojuego", color = Color.Black, fontSize = 13.sp)
+                },
+                modifier = Modifier.fillMaxSize())
+        }
+        LineDivisoria(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -344.0.dp
+                )
+            )
+        )
+        BannerText(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -378.5.dp
+                )
+            )
+        )
+    }
+}
+
+
+/*
+@Composable
+fun PantallaAdminComponent(
+    modifier: Modifier = Modifier,
+    onSvClick: () -> Unit = {},
     name: String,
     publisher:String,
     year:String,
     indie:Boolean,
     viewmodelAdmin: ViewmodelAdmin
 ) {
-
     TopLevel(modifier = modifier) {
-        AdminPanel(
+        BotonEspec(
+            onSvClick = onSvClick,
             modifier = Modifier.boxAlign(
-                alignment = Alignment.Center,
+                alignment = Alignment.TopStart,
                 offset = DpOffset(
-                    x = 0.0.dp,
-                    y = 0.0.dp
+                    x = 133.0.dp,
+                    y = 796.0.dp
                 )
             )
         ) {
-            BotonEspec(
-                onLoginClick = onLoginClick,
+            Guardar(
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.Center,
                     offset = DpOffset(
-                        x = 0.0.dp,
-                        y = 77.5.dp
-                    )
-                )
-            ) {
-                Guardar(
-                    modifier = Modifier.boxAlign(
-                        alignment = Alignment.Center,
-                        offset = DpOffset(
-                            x = -0.5.dp,
-                            y = 0.0.dp
-                        )
-                    )
-                )
-            }
-            CheckBox(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = 0.5.dp,
-                        y = -12.5.dp
-                    )
-                )
-            ) {
-                TextCheckBox()
-                FrameCheckBox {
-
-                    androidx.compose.material3.Switch(
-                        checked = indie, onCheckedChange = { viewmodelAdmin.changeIndie(it) },
-                        modifier = Modifier
-                            .width(52.dp)
-                            .height(32.dp)
-                            .background(
-                                color = Color(0xFFFFFFFF),
-                                shape = RoundedCornerShape(size = 100.dp)
-                            )
-                            .padding(start = 2.dp, top = 2.dp, end = 2.dp, bottom = 2.dp),
-                        colors = androidx.compose.material3.SwitchDefaults.colors(checkedTrackColor = Color(0xFF1ACE4D)))
-                }
-            }
-            FrameOutlinedYear(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = 0.0.dp,
-                        y = -76.5.dp
-                    )
-                )
-            ) {
-                androidx.compose.material3.OutlinedTextField(value = year, onValueChange = {
-                    try {
-                        if (it.isDigitsOnly() || it != "") {
-                            viewmodelAdmin.changeYear(it.toInt())
-                        }
-                    }
-                    catch (e:Exception) {
-                        Log.d("","")
-                    }
-                },
-                    colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = Color(0xFF1ACE4D),
-                        unfocusedBorderColor = Color.Black,
-                        focusedLabelColor = Color.Black,
-                        unfocusedLabelColor = Color.Black,
-                        unfocusedTextColor = Color.Black,
-                        focusedTextColor = Color.Black
-                    ),
-                    label = {
-                        Text("Año de lanzamiento", color = Color.Black, fontSize = 13.sp)
-                    },
-                    keyboardOptions = KeyboardOptions.Default.copy(
-                        keyboardType = KeyboardType.Number
-                    ),
-                    modifier = Modifier.fillMaxWidth())
-            }
-            Spacer(modifier = Modifier.padding(7.dp))
-            FrameOutlinedPublisher(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = 0.0.dp,
-                        y = -141.5.dp
-                    )
-                )
-            ) {
-                androidx.compose.material3.OutlinedTextField(value = publisher, onValueChange = {
-                    viewmodelAdmin.changePublisher(it)
-                },
-                    colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = Color(0xFF1ACE4D),
-                        unfocusedBorderColor = Color.Black,
-                        focusedLabelColor = Color.Black,
-                        unfocusedLabelColor = Color.Black,
-                        unfocusedTextColor = Color.Black,
-                        focusedTextColor = Color.Black
-                    ),
-                    label = {
-                        Text("Publisher del videojuego", color = Color.Black, fontSize = 13.sp)
-                    },
-                    modifier = Modifier.fillMaxWidth())
-            }
-            Spacer(modifier = Modifier.padding(7.dp))
-            FrameOutlinedName(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = 0.0.dp,
-                        y = -206.5.dp
-                    )
-                )
-            ) {
-                androidx.compose.material3.OutlinedTextField(value = name, onValueChange = {
-                    viewmodelAdmin.changeName(it)
-                },
-                    colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = Color(0xFF1ACE4D),
-                        unfocusedBorderColor = Color.Black,
-                        focusedLabelColor = Color.Black,
-                        unfocusedLabelColor = Color.Black,
-                        unfocusedTextColor = Color.Black,
-                        focusedTextColor = Color.Black
-                    ),
-                    label = {
-                        Text("Nombre del videojuego", color = Color.Black, fontSize = 13.sp)
-                    },
-                    modifier = Modifier.fillMaxWidth())
-            }
-            Spacer(modifier = Modifier.padding(7.dp))
-            Line1(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = 0.0.dp,
-                        y = -361.0.dp
-                    )
-                )
-            )
-            TextAdmin(
-                modifier = Modifier.boxAlign(
-                    alignment = Alignment.Center,
-                    offset = DpOffset(
-                        x = -1.0.dp,
-                        y = -403.5.dp
+                        x = -0.5.dp,
+                        y = 0.0.dp
                     )
                 )
             )
         }
-    }
-}
+        CheckBox(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopStart,
+                offset = DpOffset(
+                    x = 146.0.dp,
+                    y = 674.0.dp
+                )
+            )
+        ) {
+            TextCheckBox()
+            FrameCheckBox {
+                androidx.compose.material3.Switch(
+                    checked = indie, onCheckedChange = { viewmodelAdmin.changeIndie(it) },
+                    modifier = Modifier
+                        .width(52.dp)
+                        .height(32.dp)
+                        .background(
+                            color = Color(0xFFFFFFFF),
+                            shape = RoundedCornerShape(size = 100.dp)
+                        )
+                        .padding(start = 2.dp, top = 2.dp, end = 2.dp, bottom = 2.dp),
+                    colors = androidx.compose.material3.SwitchDefaults.colors(checkedTrackColor = Color(0xFF1ACE4D)))
+            }
+        }
+        FrameOutlinedPrice(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopStart,
+                offset = DpOffset(
+                    x = 110.0.dp,
+                    y = 550.0.dp
+                )
+            )
+        ) {
 
+        }
+        FrameOutlinedYear(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopStart,
+                offset = DpOffset(
+                    x = 110.0.dp,
+                    y = 426.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = year, onValueChange = {
+                try {
+                    if (it.isDigitsOnly() || it != "") {
+                        viewmodelAdmin.changeYear(it.toInt())
+                    }
+                }
+                catch (e:Exception) {
+                    Log.d("","")
+                }
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Año de lanzamiento", color = Color.Black, fontSize = 13.sp)
+                },
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    keyboardType = KeyboardType.Number
+                ),
+                modifier = Modifier.fillMaxWidth())
+        }
+        FrameOutlinedPublisher(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopStart,
+                offset = DpOffset(
+                    x = 110.0.dp,
+                    y = 302.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = publisher, onValueChange = {
+                viewmodelAdmin.changePublisher(it)
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Publisher del videojuego", color = Color.Black, fontSize = 13.sp)
+                },
+                modifier = Modifier.fillMaxWidth())
+        }
+        FrameOutlinedName(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopStart,
+                offset = DpOffset(
+                    x = 110.0.dp,
+                    y = 178.0.dp
+                )
+            )
+        ) {
+            androidx.compose.material3.OutlinedTextField(value = name, onValueChange = {
+                viewmodelAdmin.changeName(it)
+            },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF1ACE4D),
+                    unfocusedBorderColor = Color.Black,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Black,
+                    unfocusedTextColor = Color.Black,
+                    focusedTextColor = Color.Black
+                ),
+                label = {
+                    Text("Nombre del videojuego", color = Color.Black, fontSize = 13.sp)
+                },
+                modifier = Modifier.fillMaxWidth())
+        }
+        }
+        LineDivisoria(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.Center,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = -358.0.dp
+                )
+            )
+        )
+        BannerText(
+            modifier = Modifier.boxAlign(
+                alignment = Alignment.TopCenter,
+                offset = DpOffset(
+                    x = 0.0.dp,
+                    y = 38.0.dp
+                )
+            )
+        )
+    }
+
+
+
+ */
 
 
 

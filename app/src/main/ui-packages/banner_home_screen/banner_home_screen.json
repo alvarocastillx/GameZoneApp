@@ -1,0 +1,75 @@
+{
+  "name": "banner_home_screen",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "107:136",
+    "version": "5140568324",
+    "component-id": "b5b78cf508d708a3c7401c8d566d383dd4fb4252"
+  },
+  "default": "BannerHomeScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "IMGGamezone"
+      }
+    ],
+    "modes": {
+      "BannerHomeScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "IMGGamezone"
+            ]
+          },
+          {
+            "id": "IMGGamezone",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "317.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              }
+            },
+            "image-content": "imggamezone.png",
+            "scale": "fill"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "BannerHomeScreen",
+      "size": {
+        "width": 430.0,
+        "height": 221.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

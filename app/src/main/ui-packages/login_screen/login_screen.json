@@ -1,0 +1,453 @@
+{
+  "name": "login_screen",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "146:57",
+    "version": "5154310766",
+    "component-id": "43a7810f58eec4354fddd06cef48d2c3ae991cae"
+  },
+  "default": "LoginScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "BannerLogin"
+      },
+      {
+        "type": "group",
+        "id": "FrameLogin"
+      },
+      {
+        "type": "image",
+        "id": "IMGGamezone"
+      },
+      {
+        "type": "image",
+        "id": "Wallpaper"
+      },
+      {
+        "type": "group",
+        "id": "ImageGZ"
+      },
+      {
+        "type": "group",
+        "id": "TextFieldMail"
+      },
+      {
+        "type": "group",
+        "id": "TextFieldPassw"
+      },
+      {
+        "type": "group",
+        "id": "ButtonLogin"
+      },
+      {
+        "type": "group",
+        "id": "LoginText"
+      },
+      {
+        "type": "text",
+        "id": "Iniciar sesión"
+      },
+      {
+        "type": "text",
+        "id": "TextConfig"
+      }
+    ],
+    "modes": {
+      "LoginScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "BannerLogin",
+              "FrameLogin",
+              "IMGGamezone"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BannerLogin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-315.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "255.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Wallpaper",
+              "ImageGZ"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameLogin",
+            "border-radius": "41.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "104.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "678.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "TextFieldMail",
+              "TextFieldPassw",
+              "ButtonLogin",
+              "LoginText"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "IMGGamezone",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.75"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "187.56338500976562"
+              }
+            },
+            "image-content": "imggamezone.png",
+            "scale": "fill"
+          },
+          {
+            "id": "Wallpaper",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "255.0"
+              }
+            },
+            "image-content": "wallpaper.png",
+            "scale": "fill"
+          },
+          {
+            "id": "ImageGZ",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.25"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-23.718307495117188"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "187.56338500976562"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "TextFieldMail",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-104.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextFieldPassw",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonLogin",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "92.0"
+              }
+            },
+            "tap-handler": "$onLoginClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Iniciar sesión"
+            ]
+          },
+          {
+            "id": "LoginText",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-251.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "82.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "TextConfig"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Iniciar sesión",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Iniciar sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.4819999876476466",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextConfig",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "428.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Iniciar sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onLoginClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "LoginScreen",
+      "size": {
+        "width": 430.0,
+        "height": 886.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

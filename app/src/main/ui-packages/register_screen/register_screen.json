@@ -1,0 +1,491 @@
+{
+  "name": "register_screen",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "150:95",
+    "version": "5154310766",
+    "component-id": "fa13985da75c0a1cdd08a6d43f6faf906cbd23ec"
+  },
+  "default": "RegisterScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "BannerRegister"
+      },
+      {
+        "type": "group",
+        "id": "FrameRegister"
+      },
+      {
+        "type": "image",
+        "id": "Wallpaper"
+      },
+      {
+        "type": "group",
+        "id": "ImageGZ"
+      },
+      {
+        "type": "image",
+        "id": "IMGGamezone"
+      },
+      {
+        "type": "group",
+        "id": "TextFieldMail"
+      },
+      {
+        "type": "group",
+        "id": "TextFieldPassw"
+      },
+      {
+        "type": "group",
+        "id": "TextFieldUser"
+      },
+      {
+        "type": "group",
+        "id": "ButtonRegister"
+      },
+      {
+        "type": "group",
+        "id": "RegisterText"
+      },
+      {
+        "type": "text",
+        "id": "Registrarse"
+      },
+      {
+        "type": "text",
+        "id": "TextRegister"
+      }
+    ],
+    "modes": {
+      "RegisterScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "BannerRegister",
+              "FrameRegister"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BannerRegister",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-315.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "255.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Wallpaper",
+              "ImageGZ"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameRegister",
+            "border-radius": "41.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "104.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "678.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "TextFieldMail",
+              "TextFieldPassw",
+              "TextFieldUser",
+              "ButtonRegister",
+              "RegisterText"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Wallpaper",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "255.0"
+              }
+            },
+            "image-content": "wallpaper.png",
+            "scale": "fill"
+          },
+          {
+            "id": "ImageGZ",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.75"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-15.718307495117188"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "187.56338500976562"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "IMGGamezone"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "IMGGamezone",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-0.25"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-10.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "187.56338500976562"
+              }
+            },
+            "image-content": "imggamezone.png",
+            "scale": "fill"
+          },
+          {
+            "id": "TextFieldMail",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-58.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextFieldPassw",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "45.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextFieldUser",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-160.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonRegister",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "138.0"
+              }
+            },
+            "tap-handler": "$onRegisterClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "173.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Registrarse"
+            ]
+          },
+          {
+            "id": "RegisterText",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-251.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "82.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "TextRegister"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Registrarse",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "173.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.4819999876476466",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextRegister",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "428.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onRegisterClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "RegisterScreen",
+      "size": {
+        "width": 430.0,
+        "height": 886.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

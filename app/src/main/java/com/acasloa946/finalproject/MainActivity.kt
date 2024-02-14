@@ -12,9 +12,10 @@ import androidx.compose.ui.Modifier
 import com.acasloa946.finalproject.navigation.NavigationManager
 import com.acasloa946.finalproject.ui.theme.FinalProjectTheme
 import com.acasloa946.finalproject.userInterface.AdminScreen.ViewmodelAdmin
+import com.acasloa946.finalproject.userInterface.HomeScreen.HomeViewmodel
 import com.acasloa946.finalproject.userInterface.LoginScreen.LoginViewmodel
-import com.acasloa946.finalproject.userInterface.SettingsScreen.SettingsScreen
-import com.acasloa946.finalproject.userInterface.SettingsScreen.ViewmodelSettings
+import com.acasloa946.finalproject.userInterface.RegisterScreen.RegisterViewmodel
+import com.acasloa946.finalproject.userInterface.SettingsScreen.SettingsViewmodel
 import com.google.firebase.FirebaseApp
 
 
@@ -28,8 +29,14 @@ class MainActivity : ComponentActivity() {
             FirebaseApp.initializeApp(this)
         }
         val viewmodelAdmin: ViewmodelAdmin by viewModels()
-        val viewmodelSettings: ViewmodelSettings by viewModels()
+        val settingsViewmodel: SettingsViewmodel by viewModels()
         val loginViewmodel: LoginViewmodel by viewModels()
+        val homeViewmodel: HomeViewmodel by viewModels()
+        val registerViewmodel: RegisterViewmodel by viewModels()
+
+
+
+
 
 
         setContent {
@@ -39,7 +46,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavigationManager(viewmodelSettings = viewmodelSettings, viewmodelAdmin = viewmodelAdmin, loginViewmodel)
+                    NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel)
                 }
             }
         }

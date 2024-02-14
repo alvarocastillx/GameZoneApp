@@ -1,0 +1,521 @@
+{
+  "name": "info_dialog",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "161:216",
+    "version": "5154555540",
+    "component-id": "3e12b829cfaa60f204a034751da41be278c2a425"
+  },
+  "default": "InfoDialog",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "AcceptButton"
+      },
+      {
+        "type": "group",
+        "id": "MailTextBox"
+      },
+      {
+        "type": "group",
+        "id": "UserTextBox"
+      },
+      {
+        "type": "image",
+        "id": "UserImage"
+      },
+      {
+        "type": "text",
+        "id": "Aceptar"
+      },
+      {
+        "type": "vector",
+        "id": "TextBoxMail"
+      },
+      {
+        "type": "text",
+        "id": "TextMail"
+      },
+      {
+        "type": "group",
+        "id": "IconMail"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "vector",
+        "id": "TextBoxUsername"
+      },
+      {
+        "type": "text",
+        "id": "TextUser"
+      },
+      {
+        "type": "group",
+        "id": "IconUser"
+      },
+      {
+        "type": "vector",
+        "id": "UserVector"
+      }
+    ],
+    "modes": {
+      "InfoDialog": {
+        "rules": [
+          {
+            "id": "top_level",
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AcceptButton",
+              "MailTextBox",
+              "UserTextBox",
+              "UserImage"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "AcceptButton",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "132.5"
+              }
+            },
+            "tap-handler": "$onAcceptClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Aceptar"
+            ]
+          },
+          {
+            "id": "MailTextBox",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "63.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "TextBoxMail",
+              "TextMail",
+              "IconMail"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "UserTextBox",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "20.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "TextBoxUsername",
+              "TextUser",
+              "IconUser"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "UserImage",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-106.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              }
+            },
+            "image-content": "user_image.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Aceptar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Aceptar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextBoxMail",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "vector-content": "text_box_mail.svg"
+          },
+          {
+            "id": "TextMail",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textEmail",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "IconMail",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-119.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ]
+          },
+          {
+            "id": "Vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.000020503997802734375"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.000035762786865234375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.166666984558105"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.16667652130127"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "TextBoxUsername",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "vector-content": "text_box_username.svg"
+          },
+          {
+            "id": "TextUser",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textUser",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "IconUser",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-119.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-1.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "UserVector"
+            ]
+          },
+          {
+            "id": "UserVector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.000020503997802734375"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.000020503997802734375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.333333015441895"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.333333015441895"
+              }
+            },
+            "vector-content": "user_vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onAcceptClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "textEmail": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textUser": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "InfoDialog",
+      "size": {
+        "width": 358.0,
+        "height": 416.0
+      },
+      "parameters": {
+        "textEmail": "e-mail",
+        "textUser": "username"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

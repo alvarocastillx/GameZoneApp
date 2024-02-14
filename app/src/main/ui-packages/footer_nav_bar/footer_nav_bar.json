@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "65:5",
-    "version": "5133403231",
+    "version": "5139652268",
     "component-id": "1389285efde8fbff66e587f02aeca315a35ffa57"
   },
   "default": "FooterNavBar",
@@ -17,12 +17,12 @@
         "root": "true"
       },
       {
-        "type": "vector",
-        "id": "ButtonCatalog"
-      },
-      {
         "type": "image",
         "id": "SettingsIcon"
+      },
+      {
+        "type": "vector",
+        "id": "ButtonCatalog"
       },
       {
         "type": "vector",
@@ -48,26 +48,53 @@
             "id": "top_level",
             "border-radius": "86.0",
             "stroke-width": "1.0",
+            "stroke-alignment": "outside",
             "stroke-color": {
               "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
             },
             "is-structured": "false",
             "children": [
-              "ButtonCatalog",
               "SettingsIcon",
+              "ButtonCatalog",
               "Line3",
               "Line2",
               "GrupoGZ"
             ],
             "background-color": {
               "alpha": "1.0",
-              "hue": "137.0",
-              "saturation": "0.8737864077669903",
-              "value": "0.807843137254902"
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
             }
+          },
+          {
+            "id": "SettingsIcon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "308.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "11.0"
+              }
+            },
+            "tap-handler": "$onSettingsClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "image-content": "settings_icon.png",
+            "scale": "cover"
           },
           {
             "id": "ButtonCatalog",
@@ -97,28 +124,6 @@
               }
             },
             "vector-content": "button_catalog.svg"
-          },
-          {
-            "id": "SettingsIcon",
-            "margin": {
-              "left": "311.0",
-              "top": "18.0",
-              "right": "48.0",
-              "bottom": "13.0"
-            },
-            "tap-handler": "$onSettingsClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "image-content": "settings_icon.png",
-            "scale": "cover"
           },
           {
             "id": "Line3",
@@ -221,9 +226,9 @@
             },
             "color": {
               "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
             },
             "text-content": "GZ",
             "overflow": "visible",
@@ -238,12 +243,12 @@
     }
   },
   "parameters": {
-    "onCatalogClick": {
+    "onSettingsClick": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
     },
-    "onSettingsClick": {
+    "onCatalogClick": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
