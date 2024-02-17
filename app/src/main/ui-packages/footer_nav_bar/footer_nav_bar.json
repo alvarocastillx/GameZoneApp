@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "65:5",
-    "version": "5139652268",
+    "version": "5163140450",
     "component-id": "1389285efde8fbff66e587f02aeca315a35ffa57"
   },
   "default": "FooterNavBar",
@@ -17,8 +17,12 @@
         "root": "true"
       },
       {
-        "type": "image",
-        "id": "SettingsIcon"
+        "type": "group",
+        "id": "GrupoGZ"
+      },
+      {
+        "type": "vector",
+        "id": "Line2"
       },
       {
         "type": "vector",
@@ -29,12 +33,8 @@
         "id": "Line3"
       },
       {
-        "type": "vector",
-        "id": "Line2"
-      },
-      {
-        "type": "group",
-        "id": "GrupoGZ"
+        "type": "image",
+        "id": "SettingsIcon"
       },
       {
         "type": "text",
@@ -46,7 +46,19 @@
         "rules": [
           {
             "id": "top_level",
+            "padding": {
+              "left": "43.0",
+              "right": "43.0"
+            },
             "border-radius": "86.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
             "stroke-width": "1.0",
             "stroke-alignment": "outside",
             "stroke-color": {
@@ -55,14 +67,15 @@
               "saturation": "0.8737864077669903",
               "value": "0.807843137254902"
             },
-            "is-structured": "false",
+            "arrangement": "row",
             "children": [
-              "SettingsIcon",
+              "GrupoGZ",
+              "Line2",
               "ButtonCatalog",
               "Line3",
-              "Line2",
-              "GrupoGZ"
+              "SettingsIcon"
             ],
+            "item-spacing": "43.0",
             "background-color": {
               "alpha": "1.0",
               "hue": "0.0",
@@ -71,129 +84,16 @@
             }
           },
           {
-            "id": "SettingsIcon",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "308.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "11.0"
-              }
-            },
-            "tap-handler": "$onSettingsClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "39.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "40.0"
-              }
-            },
-            "image-content": "settings_icon.png",
-            "scale": "cover"
-          },
-          {
-            "id": "ButtonCatalog",
-            "margin": {
-              "top": "22.0",
-              "bottom": "17.794118881225586"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.25"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "tap-handler": "$onCatalogClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "49.5"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "button_catalog.svg"
-          },
-          {
-            "id": "Line3",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "265.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "66.0"
-              }
-            },
-            "vector-content": "line3.svg"
-          },
-          {
-            "id": "Line2",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "128.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "66.0"
-              }
-            },
-            "vector-content": "line2.svg"
-          },
-          {
             "id": "GrupoGZ",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "46.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "20.0"
-              }
-            },
             "tap-handler": "$onHomeClick",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "40.0"
+                "value": "45.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "35.0"
+                "value": "33.0"
               }
             },
             "is-structured": "false",
@@ -203,25 +103,84 @@
             "clip-content": "false"
           },
           {
+            "id": "Line2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "2.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "66.0"
+              }
+            },
+            "vector-content": "line2.svg"
+          },
+          {
+            "id": "ButtonCatalog",
+            "tap-handler": "$onCatalogClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "26.205881118774414"
+              }
+            },
+            "vector-content": "button_catalog.svg"
+          },
+          {
+            "id": "Line3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "2.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "66.0"
+              }
+            },
+            "vector-content": "line3.svg"
+          },
+          {
+            "id": "SettingsIcon",
+            "tap-handler": "$onSettingsClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "47.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "47.0"
+              }
+            },
+            "image-content": "settings_icon.png",
+            "scale": "cover"
+          },
+          {
             "id": "TextGZ",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "2.75"
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "4.5"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "40.0"
+                "value": "56.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "35.0"
+                "value": "53.0"
               }
             },
             "color": {
@@ -234,8 +193,8 @@
             "overflow": "visible",
             "max-lines": "-1",
             "text-align-vertical": "center",
-            "text-size": "35.0",
-            "line-height": "1.2",
+            "text-size": "45.0",
+            "line-height": "1.2000000847710504",
             "typeface": "Mogra"
           }
         ]
@@ -243,7 +202,7 @@
     }
   },
   "parameters": {
-    "onSettingsClick": {
+    "onHomeClick": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
@@ -253,7 +212,7 @@
       "required": false,
       "description": ""
     },
-    "onHomeClick": {
+    "onSettingsClick": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
@@ -263,7 +222,7 @@
     {
       "design": "FooterNavBar",
       "size": {
-        "width": 392.0,
+        "width": 403.5,
         "height": 66.0
       }
     }

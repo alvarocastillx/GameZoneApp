@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "161:216",
-    "version": "5154555540",
+    "version": "5154706929",
     "component-id": "3e12b829cfaa60f204a034751da41be278c2a425"
   },
   "default": "InfoDialog",
@@ -287,7 +287,7 @@
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "-1.0"
+                "offset": "0.0"
               }
             },
             "size-constraints": {
@@ -401,7 +401,7 @@
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "-1.0"
+                "offset": "0.0"
               }
             },
             "size-constraints": {

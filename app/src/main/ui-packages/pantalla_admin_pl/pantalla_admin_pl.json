@@ -1,0 +1,836 @@
+{
+  "name": "pantalla_admin_pl",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "28:2283",
+    "version": "5155484027",
+    "component-id": "00cda00a3456c24e626b760cfb3e8e32e10e5ebd"
+  },
+  "default": "PantallaAdminPL",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextAdmin"
+      },
+      {
+        "type": "vector",
+        "id": "Line 1"
+      },
+      {
+        "type": "group",
+        "id": "FrameOutlinedName"
+      },
+      {
+        "type": "group",
+        "id": "FrameOutlinedPublisher"
+      },
+      {
+        "type": "group",
+        "id": "FrameOutlinedYear"
+      },
+      {
+        "type": "group",
+        "id": "FrameOutlinedPrice"
+      },
+      {
+        "type": "group",
+        "id": "CheckBox"
+      },
+      {
+        "type": "group",
+        "id": "BotonEspec"
+      },
+      {
+        "type": "group",
+        "id": "PlatformFrame"
+      },
+      {
+        "type": "text",
+        "id": "TextCheckBox"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckBox"
+      },
+      {
+        "type": "text",
+        "id": "Guardar"
+      },
+      {
+        "type": "group",
+        "id": "FrameNintendo"
+      },
+      {
+        "type": "group",
+        "id": "FramePS"
+      },
+      {
+        "type": "group",
+        "id": "FrameXbox"
+      },
+      {
+        "type": "text",
+        "id": "Plataformas"
+      },
+      {
+        "type": "group",
+        "id": "NintendoLogo"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckboxNintendo"
+      },
+      {
+        "type": "vector",
+        "id": "VectorNintendo"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckBoxPS"
+      },
+      {
+        "type": "group",
+        "id": "PlaystationLogo"
+      },
+      {
+        "type": "vector",
+        "id": "VectorPS"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckBoxXbox"
+      },
+      {
+        "type": "group",
+        "id": "XboxLogo"
+      },
+      {
+        "type": "vector",
+        "id": "VectorXbox"
+      }
+    ],
+    "modes": {
+      "PantallaAdminPL": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "TextAdmin",
+              "Line 1",
+              "FrameOutlinedName",
+              "FrameOutlinedPublisher",
+              "FrameOutlinedYear",
+              "FrameOutlinedPrice",
+              "CheckBox",
+              "BotonEspec",
+              "PlatformFrame"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextAdmin",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-507.5"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "PANEL DE ADMINISTRADOR",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "30.0",
+            "letter-spacing": "3.3",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "Line 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-457.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "430.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "line_1.svg"
+          },
+          {
+            "id": "FrameOutlinedName",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-325.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameOutlinedPublisher",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-199.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameOutlinedYear",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-73.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameOutlinedPrice",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "52.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "210.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "CheckBox",
+            "padding": "11.0",
+            "border-radius": "100.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "136.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "139.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "TextCheckBox",
+              "FrameCheckBox"
+            ],
+            "item-spacing": "9.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "BotonEspec",
+            "border-radius": "15.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "501.5"
+              }
+            },
+            "tap-handler": "$onSaveClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Guardar"
+            ]
+          },
+          {
+            "id": "PlatformFrame",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "298.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "103.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "211.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "FrameNintendo",
+              "FramePS",
+              "FrameXbox",
+              "Plataformas"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "TextCheckBox",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "¿Indie?",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameCheckBox",
+            "border-radius": "33.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Guardar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "103.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Guardar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.4819999876476466",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameNintendo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "81.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "95.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "NintendoLogo",
+              "FrameCheckboxNintendo"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FramePS",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-36.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "95.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "FrameCheckBoxPS",
+              "PlaystationLogo"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameXbox",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "3.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "25.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "90.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "FrameCheckBoxXbox",
+              "XboxLogo"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Plataformas",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-90.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "103.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Plataformas",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.4819999876476466",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "NintendoLogo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-23.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "VectorNintendo"
+            ]
+          },
+          {
+            "id": "FrameCheckboxNintendo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "23.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "VectorNintendo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0009632110595703125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.85007095336914"
+              }
+            },
+            "vector-content": "vector_nintendo.svg"
+          },
+          {
+            "id": "FrameCheckBoxPS",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "23.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "PlaystationLogo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-23.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "VectorPS"
+            ]
+          },
+          {
+            "id": "VectorPS",
+            "margin": {
+              "left": "1.56005859375",
+              "top": "8.0",
+              "right": "2.4400978088378906",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector_ps.svg"
+          },
+          {
+            "id": "FrameCheckBoxXbox",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "21.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "48.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "XboxLogo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-26.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-3.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "VectorXbox"
+            ]
+          },
+          {
+            "id": "VectorXbox",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0001697540283203125"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.0003261566162109375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.00033950805664"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.99934768676758"
+              }
+            },
+            "vector-content": "vector_xbox.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onSaveClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "PantallaAdminPL",
+      "size": {
+        "width": 430.0,
+        "height": 1105.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

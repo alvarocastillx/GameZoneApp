@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "146:57",
-    "version": "5154310766",
+    "version": "5163279832",
     "component-id": "43a7810f58eec4354fddd06cef48d2c3ae991cae"
   },
   "default": "LoginScreen",
@@ -17,24 +17,16 @@
         "root": "true"
       },
       {
-        "type": "group",
-        "id": "BannerLogin"
+        "type": "image",
+        "id": "Wallpaper"
       },
       {
         "type": "group",
         "id": "FrameLogin"
       },
       {
-        "type": "image",
-        "id": "IMGGamezone"
-      },
-      {
-        "type": "image",
-        "id": "Wallpaper"
-      },
-      {
         "type": "group",
-        "id": "ImageGZ"
+        "id": "LoginText"
       },
       {
         "type": "group",
@@ -49,16 +41,12 @@
         "id": "ButtonLogin"
       },
       {
-        "type": "group",
-        "id": "LoginText"
+        "type": "text",
+        "id": "TextConfig"
       },
       {
         "type": "text",
         "id": "Iniciar sesión"
-      },
-      {
-        "type": "text",
-        "id": "TextConfig"
       }
     ],
     "modes": {
@@ -68,120 +56,20 @@
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "BannerLogin",
-              "FrameLogin",
-              "IMGGamezone"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "BannerLogin",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-315.5"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "429.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "255.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
               "Wallpaper",
-              "ImageGZ"
+              "FrameLogin"
             ],
             "clip-content": "false"
-          },
-          {
-            "id": "FrameLogin",
-            "border-radius": "41.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "104.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "429.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "678.0"
-              }
-            },
-            "stroke-width": "1.0",
-            "stroke-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "is-structured": "false",
-            "children": [
-              "TextFieldMail",
-              "TextFieldPassw",
-              "ButtonLogin",
-              "LoginText"
-            ],
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.8509803921568627"
-            },
-            "clip-content": "false"
-          },
-          {
-            "id": "IMGGamezone",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "60.75"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "308.5"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "187.56338500976562"
-              }
-            },
-            "image-content": "imggamezone.png",
-            "scale": "fill"
           },
           {
             "id": "Wallpaper",
             "alignment": {
               "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
+                "attachment": "start",
+                "offset": "1.0"
               },
               "vertical": {
-                "attachment": "center",
+                "attachment": "start",
                 "offset": "0.0"
               }
             },
@@ -196,117 +84,35 @@
               }
             },
             "image-content": "wallpaper.png",
-            "scale": "fill"
+            "scale": "cover"
           },
           {
-            "id": "ImageGZ",
+            "id": "FrameLogin",
+            "padding": {
+              "left": "39.0",
+              "top": "47.0",
+              "right": "39.0",
+              "bottom": "47.0"
+            },
+            "border-radius": "41.0",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-0.25"
+                "offset": "0.0"
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "-23.718307495117188"
+                "offset": "70.0"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "308.5"
+                "value": "430.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "187.56338500976562"
-              }
-            },
-            "is-structured": "false",
-            "clip-content": "false"
-          },
-          {
-            "id": "TextFieldMail",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "1.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-104.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "349.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "56.0"
-              }
-            },
-            "is-structured": "false",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "clip-content": "false"
-          },
-          {
-            "id": "TextFieldPassw",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "1.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-1.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "349.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "56.0"
-              }
-            },
-            "is-structured": "false",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "clip-content": "false"
-          },
-          {
-            "id": "ButtonLogin",
-            "border-radius": "15.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "92.0"
-              }
-            },
-            "tap-handler": "$onLoginClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "146.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "38.0"
+                "value": "597.0"
               }
             },
             "stroke-width": "1.0",
@@ -316,23 +122,25 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "is-structured": "false",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
             "children": [
-              "Iniciar sesión"
-            ]
+              "LoginText",
+              "TextFieldMail",
+              "TextFieldPassw",
+              "ButtonLogin"
+            ],
+            "item-spacing": "57.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
           },
           {
             "id": "LoginText",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-251.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -356,17 +164,39 @@
             "clip-content": "false"
           },
           {
-            "id": "Iniciar sesión",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
+            "id": "TextFieldMail",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
               },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
               }
             },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "TextFieldPassw",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "349.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonLogin",
+            "border-radius": "15.0",
+            "tap-handler": "$onLoginClick",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -377,19 +207,17 @@
                 "value": "38.0"
               }
             },
-            "color": {
+            "stroke-width": "1.0",
+            "stroke-color": {
               "alpha": "1.0",
               "hue": "0.0",
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Iniciar sesión",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align-vertical": "center",
-            "text-size": "21.0",
-            "line-height": "1.4819999876476466",
-            "typeface": "Oswald"
+            "is-structured": "false",
+            "children": [
+              "Iniciar sesión"
+            ]
           },
           {
             "id": "TextConfig",
@@ -426,6 +254,42 @@
             "text-size": "30.0",
             "line-height": "1.481999969482422",
             "typeface": "Oswald"
+          },
+          {
+            "id": "Iniciar sesión",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Iniciar sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "21.0",
+            "line-height": "1.4819999876476466",
+            "typeface": "Oswald"
           }
         ]
       }
@@ -443,7 +307,7 @@
       "design": "LoginScreen",
       "size": {
         "width": 430.0,
-        "height": 886.0
+        "height": 795.0
       }
     }
   ],

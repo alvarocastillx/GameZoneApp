@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.acasloa946.finalproject.bannersettings.BannerSettings
 import com.acasloa946.finalproject.footernavbar.FooterNavBar
-import com.acasloa946.finalproject.framesettingsnotlogged.FrameSettingsNotLogged
 import com.acasloa946.finalproject.navigation.Routes
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
@@ -32,11 +31,10 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
 
     Scaffold( modifier = Modifier.align(Alignment.BottomCenter),
         bottomBar = {
-            // Contenedor con padding alrededor de la barra de navegación
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 11.dp, bottom = 20.dp) // Ajusta la cantidad de espacio según tus necesidades
+                    .padding(start = 11.dp, bottom = 20.dp)
             ) {
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
@@ -57,25 +55,25 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
 
         ) {
             BannerSettings(modifier = Modifier.size(430.dp, 89.dp))
-
-
             if (settingsViewmodel.logged) {
-                FrameSettingsLoggedComponent(modifier = Modifier.size(400.dp,697.dp).padding(bottom = 70.dp), settingsViewmodel = settingsViewmodel, onInfoClick = {
+                FrameSettingsLoggedFinalComponent(modifier = Modifier.fillMaxWidth().padding(bottom = 70.dp), settingsViewmodel = settingsViewmodel, onInfoClick = {
                     settingsViewmodel.openDialog()
-                }, onLogOutClick = {
+                }, onLogoutClick = {
                     settingsViewmodel.signOut()
                 })
                 InfoDialog(settingsViewmodel = settingsViewmodel, onAcceptClick = {
                     settingsViewmodel.closeDialog()
-                })
+                }, textEmail = settingsViewmodel.userMail!!, textUser = settingsViewmodel.userName!!)
             }
             else {
-                FrameSettingsNotLoggedComponent(modifier = Modifier.size(400.dp,697.dp), settingsViewmodel = settingsViewmodel, onLoginClick = {
+                FrameSettingsNotLoggedComponent(modifier = Modifier.fillMaxWidth(), settingsViewmodel = settingsViewmodel, onLoginClick = {
                     navController.navigate(Routes.LoginScreen.route)
                 }, onRegisterClick = {
                     navController.navigate(Routes.RegisterScreen.route)
                 })
             }
+
+
 
 
         }

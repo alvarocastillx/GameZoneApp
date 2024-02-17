@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "160:162",
-    "version": "5154342268",
+    "version": "5162295170",
     "component-id": "9eec6b348edef11cdeb44fc9ff738b5326ef4e89"
   },
   "default": "FrameSettingsNotLogged",
@@ -18,19 +18,11 @@
       },
       {
         "type": "group",
-        "id": "ButtonNot"
-      },
-      {
-        "type": "group",
         "id": "ButtonsFrame"
       },
       {
-        "type": "text",
-        "id": "Habilitar notificaciones"
-      },
-      {
         "type": "group",
-        "id": "FrameCheckBox"
+        "id": "ButtonNot"
       },
       {
         "type": "group",
@@ -51,6 +43,14 @@
       {
         "type": "text",
         "id": "Registrarse"
+      },
+      {
+        "type": "text",
+        "id": "Habilitar notificaciones"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckBox"
       }
     ],
     "modes": {
@@ -58,33 +58,56 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "padding": "24.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
             "children": [
-              "ButtonNot",
-              "ButtonsFrame"
+              "ButtonsFrame",
+              "ButtonNot"
             ],
+            "item-spacing": "30.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonsFrame",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "399.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "98.0"
+              }
+            },
+            "children": [
+              "ButtonIniciarSesion",
+              "ButtonRegistrar",
+              "Line"
+            ],
+            "item-spacing": "16.0",
             "clip-content": "false"
           },
           {
             "id": "ButtonNot",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-1.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-234.5"
-              }
+            "padding": {
+              "left": "32.0",
+              "top": "11.0",
+              "right": "32.0",
+              "bottom": "11.0"
             },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "395.0"
+                "sizing-mode": "shrink"
               },
               "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "54.0"
+                "sizing-mode": "shrink"
               }
             },
             "stroke-width": "1.0",
@@ -94,64 +117,121 @@
               "saturation": "0.0",
               "value": "0.0"
             },
-            "is-structured": "false",
+            "arrangement": "row",
             "children": [
               "Habilitar notificaciones",
               "FrameCheckBox"
-            ]
+            ],
+            "item-spacing": "8.0"
           },
           {
-            "id": "ButtonsFrame",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-313.5"
-              }
+            "id": "ButtonIniciarSesion",
+            "padding": {
+              "left": "110.0",
+              "top": "4.0",
+              "right": "110.0",
+              "bottom": "4.0"
             },
+            "border-radius": "15.0",
+            "tap-handler": "$onLoginClick",
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "400.0"
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "Iniciar sesión"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "ButtonRegistrar",
+            "padding": {
+              "left": "110.0",
+              "top": "4.0",
+              "right": "110.0",
+              "bottom": "4.0"
+            },
+            "border-radius": "15.0",
+            "tap-handler": "$onRegisterClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "Registrarse"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "Line",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "70.0"
+                "value": "1.0"
               }
             },
-            "is-structured": "false",
-            "children": [
-              "ButtonIniciarSesion",
-              "ButtonRegistrar",
-              "Line"
-            ],
-            "clip-content": "false"
+            "vector-content": "line.svg"
+          },
+          {
+            "id": "Iniciar sesión",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Iniciar sesión",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "Registrarse",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
           },
           {
             "id": "Habilitar notificaciones",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-25.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "156.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "26.0"
-              }
-            },
             "color": {
               "alpha": "1.0",
               "hue": "0.0",
@@ -160,7 +240,6 @@
             },
             "text-content": "Habilitar notificaciones",
             "overflow": "visible",
-            "max-lines": "-1",
             "text-align-vertical": "center",
             "text-size": "17.0",
             "line-height": "1.4820000143612133",
@@ -169,16 +248,6 @@
           {
             "id": "FrameCheckBox",
             "border-radius": "33.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "78.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -197,172 +266,6 @@
               "value": "1.0"
             },
             "clip-content": "false"
-          },
-          {
-            "id": "ButtonIniciarSesion",
-            "border-radius": "15.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-104.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-1.0"
-              }
-            },
-            "tap-handler": "$onLoginClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "192.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "32.0"
-              }
-            },
-            "stroke-width": "1.0",
-            "stroke-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "is-structured": "false",
-            "children": [
-              "Iniciar sesión"
-            ]
-          },
-          {
-            "id": "ButtonRegistrar",
-            "border-radius": "15.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "100.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-0.5"
-              }
-            },
-            "tap-handler": "$onRegisterClick",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "192.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "31.0"
-              }
-            },
-            "stroke-width": "1.0",
-            "stroke-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "is-structured": "false",
-            "children": [
-              "Registrarse"
-            ]
-          },
-          {
-            "id": "Line",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "34.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "399.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "2.0"
-              }
-            },
-            "vector-content": "line.svg"
-          },
-          {
-            "id": "Iniciar sesión",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-0.5"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "228.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Iniciar sesión",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align-vertical": "center",
-            "text-size": "17.0",
-            "line-height": "1.4820000143612133",
-            "typeface": "Oswald"
-          },
-          {
-            "id": "Registrarse",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "0.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "206.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Registrarse",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align-vertical": "center",
-            "text-size": "17.0",
-            "line-height": "1.4820000143612133",
-            "typeface": "Oswald"
           }
         ]
       }
@@ -384,8 +287,8 @@
     {
       "design": "FrameSettingsNotLogged",
       "size": {
-        "width": 400.0,
-        "height": 697.0
+        "width": 447.0,
+        "height": 230.0
       }
     }
   ],

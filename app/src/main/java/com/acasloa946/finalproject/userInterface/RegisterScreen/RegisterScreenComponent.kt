@@ -3,6 +3,11 @@ package com.acasloa946.finalproject.userInterface.RegisterScreen
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -83,7 +88,7 @@ fun RegisterScreenComponent(
                     )
                 )
             ) {
-                androidx.compose.material3.OutlinedTextField(
+                androidx.compose.material3.TextField(
                     value = registerViewmodel.email, onValueChange = {
                         registerViewmodel.changeEmail(it)
                     },
@@ -98,7 +103,10 @@ fun RegisterScreenComponent(
                     placeholder = {
                         Text("Introduzca su correo electrónico", color = Color.Black, fontSize = 15.sp)
                     },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = {
+                        Icon(imageVector = Icons.Default.Email , contentDescription = null)
+                    }
                 )
             }
             TextFieldPassw(
@@ -110,7 +118,7 @@ fun RegisterScreenComponent(
                     )
                 )
             ) {
-                androidx.compose.material3.OutlinedTextField(
+                androidx.compose.material3.TextField(
                     value = registerViewmodel.passw, onValueChange = {
                         registerViewmodel.changePassw(it)
                     },
@@ -126,7 +134,10 @@ fun RegisterScreenComponent(
                         Text("Introduzca su contraseña", color = Color.Black, fontSize = 15.sp)
                     },
                     modifier = Modifier.fillMaxWidth(),
-                    visualTransformation = PasswordVisualTransformation()
+                    visualTransformation = PasswordVisualTransformation(),
+                    leadingIcon = {
+                        Icon(imageVector = Icons.Default.Lock , contentDescription = null)
+                    }
                 )
             }
             TextFieldUser(
@@ -138,7 +149,7 @@ fun RegisterScreenComponent(
                     )
                 )
             ) {
-                androidx.compose.material3.OutlinedTextField(
+                androidx.compose.material3.TextField(
                     value = registerViewmodel.username, onValueChange = {
                         registerViewmodel.changeUsername(it)
                     },
@@ -153,7 +164,10 @@ fun RegisterScreenComponent(
                     placeholder = {
                         Text("Introduzca su nombre de usuario", color = Color.Black, fontSize = 15.sp)
                     },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    leadingIcon = {
+                        Icon(imageVector = Icons.Default.Face , contentDescription = null)
+                    }
                 )
             }
             ButtonRegister(

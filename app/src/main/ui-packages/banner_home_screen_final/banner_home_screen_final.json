@@ -1,0 +1,115 @@
+{
+  "name": "banner_home_screen_final",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "177:1202",
+    "version": "5162949879",
+    "component-id": "25a45a92e1ac8a8c7093e9f4cd2f173499bef19a"
+  },
+  "default": "BannerHomeScreenFinal",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "image",
+        "id": "IMGGamezone"
+      },
+      {
+        "type": "image",
+        "id": "Wallpaper"
+      }
+    ],
+    "modes": {
+      "BannerHomeScreenFinal": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "top_level_synth",
+              "IMGGamezone"
+            ]
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Wallpaper"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "IMGGamezone",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "135.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "82.0"
+              }
+            },
+            "image-content": "imggamezone.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Wallpaper",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "134.0"
+              }
+            },
+            "image-content": "wallpaper.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "BannerHomeScreenFinal",
+      "size": {
+        "width": 429.0,
+        "height": 134.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "vuG2uyu0RqUFMoxqGM8x2w",
     "node": "150:95",
-    "version": "5154310766",
+    "version": "5161906552",
     "component-id": "fa13985da75c0a1cdd08a6d43f6faf906cbd23ec"
   },
   "default": "RegisterScreen",
@@ -253,12 +253,6 @@
               }
             },
             "is-structured": "false",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
             "clip-content": "false"
           },
           {
@@ -284,12 +278,6 @@
               }
             },
             "is-structured": "false",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
             "clip-content": "false"
           },
           {
@@ -315,12 +303,6 @@
               }
             },
             "is-structured": "false",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
             "clip-content": "false"
           },
           {

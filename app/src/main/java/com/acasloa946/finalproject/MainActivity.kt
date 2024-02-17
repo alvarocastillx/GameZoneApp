@@ -46,7 +46,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel)
+
+                        NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel)
+
+
                 }
             }
         }

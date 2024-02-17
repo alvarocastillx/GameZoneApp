@@ -4,22 +4,17 @@ import android.content.Context
 import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.autoSaver
 import androidx.compose.runtime.setValue
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.acasloa946.finalproject.API.APIModule
 import com.acasloa946.finalproject.database.Videogame
 import com.google.firebase.FirebaseApp
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
-import kotlinx.coroutines.yield
 
 class ViewmodelAdmin : ViewModel() {
 
@@ -33,16 +28,31 @@ class ViewmodelAdmin : ViewModel() {
         private set
     var indie by mutableStateOf(false)
         private set
+
     var price by mutableStateOf("")
+        private set
+
+    var ps5 by mutableStateOf(false)
+        private set
+
+    var xbox by mutableStateOf(false)
+        private set
+
+    var nintendo by mutableStateOf(false)
+        private set
+
+    val platforms = mutableMapOf<String,Boolean>("ps5" to ps5,"xbox" to xbox,"nintendo" to nintendo)
 
     val auth = Firebase.auth
 
 
 init {
     indie = false
+
+
 }
 
-    suspend fun getVideogame(title:String):String{
+    suspend fun getPhotoVideogame(title:String):String{
         var photo = ""
         viewModelScope.launch {
             try {
@@ -55,16 +65,15 @@ init {
         return photo
     }
 
-    fun añadirBDD(title: String, publisher: String, year: Int, indie: Boolean, context: Context, price: String,
+    fun añadirBDD(title: String, publisher: String, year: Int, indie: Boolean, context: Context, price: String, platforms:MutableMap<String,Boolean>,
                   onSuccess : () -> Unit, onFailure : () -> Unit) {
 
         if (FirebaseApp.getApps(context).isNotEmpty()) {
             val db = FirebaseFirestore.getInstance()
             viewModelScope.launch {
                 try {
-
-                    val photo = getVideogame(title)
-                    val videogameToAdd = Videogame(title,publisher,year,indie,price,photo)
+                    val photo = getPhotoVideogame(title)
+                    val videogameToAdd = Videogame(title,publisher,year,indie,price,platforms, photo)
                     db.collection("Videogames").document(title).set(
                         videogameToAdd
                     ).addOnSuccessListener {
@@ -78,10 +87,13 @@ init {
                 }
             }
         } else {
-            // Handle the case when Firebase is not initialized
             Log.e("MainActivity", "Firebase is not initialized")
         }
     }
+
+
+
+
 
     fun changeIndie(indieUI : Boolean) {
         this.indie = indieUI
@@ -100,6 +112,25 @@ init {
     fun changePrice(price : String) {
         this.price = price
     }
+
+
+
+
+
+    fun changePs5(it: Boolean ) {
+        this.ps5 = it
+        platforms["ps5"] = it
+
+    }
+    fun changeXbox(it : Boolean) {
+        this.xbox = it
+        platforms["xbox"] = it
+    }
+    fun changeNintendo(it : Boolean) {
+        this.nintendo = it
+        platforms["nintendo"] = it
+    }
+
 
 
 

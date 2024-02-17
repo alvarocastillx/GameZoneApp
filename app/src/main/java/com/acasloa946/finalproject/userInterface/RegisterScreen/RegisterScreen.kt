@@ -19,8 +19,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.acasloa946.finalproject.footernavbar.FooterNavBar
 import com.acasloa946.finalproject.navigation.Routes
-import com.acasloa946.finalproject.userInterface.LoginScreen.LoginScreenComponent
-import com.acasloa946.finalproject.userInterface.LoginScreen.LoginViewmodel
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")

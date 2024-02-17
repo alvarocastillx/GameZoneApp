@@ -1,0 +1,257 @@
+{
+  "name": "frame_settings_logged_final",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "176:73",
+    "version": "5162747326",
+    "component-id": "17705790875b5a37690b8f45ed3d3a90b6b1c48a"
+  },
+  "default": "FrameSettingsLoggedFinal",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "ButtonNot"
+      },
+      {
+        "type": "group",
+        "id": "ButtonInfoAccount"
+      },
+      {
+        "type": "group",
+        "id": "ButtonLogOut"
+      },
+      {
+        "type": "text",
+        "id": "Habilitar notificaciones"
+      },
+      {
+        "type": "group",
+        "id": "FrameCheckBox"
+      },
+      {
+        "type": "text",
+        "id": "Información de cuenta"
+      },
+      {
+        "type": "text",
+        "id": "Cerrar sesión"
+      }
+    ],
+    "modes": {
+      "FrameSettingsLoggedFinal": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "24.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "ButtonNot",
+              "ButtonInfoAccount",
+              "ButtonLogOut"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonNot",
+            "padding": {
+              "left": "32.0",
+              "top": "11.0",
+              "right": "32.0",
+              "bottom": "11.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "Habilitar notificaciones",
+              "FrameCheckBox"
+            ],
+            "item-spacing": "8.0"
+          },
+          {
+            "id": "ButtonInfoAccount",
+            "padding": {
+              "left": "63.0",
+              "top": "4.0",
+              "right": "63.0",
+              "bottom": "4.0"
+            },
+            "border-radius": "15.0",
+            "tap-handler": "$onInfoClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "Información de cuenta"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "ButtonLogOut",
+            "padding": {
+              "left": "63.0",
+              "top": "4.0",
+              "right": "63.0",
+              "bottom": "4.0"
+            },
+            "border-radius": "15.0",
+            "tap-handler": "$onLogoutClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "arrangement": "row",
+            "children": [
+              "Cerrar sesión"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "Habilitar notificaciones",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Habilitar notificaciones",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameCheckBox",
+            "border-radius": "33.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Información de cuenta",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Información de cuenta",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "Cerrar sesión",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "1.0",
+              "value": "1.0"
+            },
+            "text-content": "Cerrar sesión",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onInfoClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onLogoutClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "FrameSettingsLoggedFinal",
+      "size": {
+        "width": 316.0,
+        "height": 200.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
