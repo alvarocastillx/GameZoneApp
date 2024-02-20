@@ -85,8 +85,6 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
                     viewmodelAdmin.changePrice("")
                     viewmodelAdmin.changeYear(0)
 
-
-
                 }, onFailure = {
                     Toast.makeText(
                         context,
@@ -95,7 +93,7 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
                     ).show()
                 }
                 )
-            },name,publisher,year.toString(),indie,price.toString(),viewmodelAdmin)
+            },name,publisher,year.toString(),indie,price,viewmodelAdmin)
 
 
 
@@ -116,24 +114,6 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
 
 
 
-
-
-/*
-
-                ///////////////////////////////////////////////////////////////////////////
-
-                ///////////////////////////////////////////////////////////////////////////
-
-                ///////////////////////////////////////////////////////////////////////////
-
-                ///////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
- */
 
 
 @Composable

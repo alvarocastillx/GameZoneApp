@@ -1,15 +1,21 @@
 package com.acasloa946.finalproject.userInterface.HomeScreen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -20,8 +26,10 @@ import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
 import coil.compose.SubcomposeAsyncImage
 import com.acasloa946.finalproject.R
+import com.acasloa946.finalproject.infodialog.InfoDialog
 import com.acasloa946.finalproject.mainhomescreencomp.ButtonIniciarSesion
 import com.acasloa946.finalproject.mainhomescreencomp.CajaMV
 import com.acasloa946.finalproject.mainhomescreencomp.CajaUL
@@ -52,14 +60,33 @@ import com.acasloa946.finalproject.mainhomescreencomp.VideogamePrice
 import com.acasloa946.finalproject.mainhomescreencomp.VideogamePrice2
 import com.acasloa946.finalproject.mainhomescreencomp.VideogameText
 import com.acasloa946.finalproject.mainhomescreencomp.oswald
+import com.acasloa946.finalproject.videogamedialog.BuyButton
+import com.acasloa946.finalproject.videogamedialog.Comprar
+import com.acasloa946.finalproject.videogamedialog.EditableTextPrice
+import com.acasloa946.finalproject.videogamedialog.EditableTextPublisher
+import com.acasloa946.finalproject.videogamedialog.EditableTextTitle
+import com.acasloa946.finalproject.videogamedialog.EditableTextYear
+import com.acasloa946.finalproject.videogamedialog.ExitButton
+import com.acasloa946.finalproject.videogamedialog.FrameInfo
+import com.acasloa946.finalproject.videogamedialog.FrameMetacritic
+import com.acasloa946.finalproject.videogamedialog.FramePrice
+import com.acasloa946.finalproject.videogamedialog.FramePublisher
+import com.acasloa946.finalproject.videogamedialog.FrameTitle
+import com.acasloa946.finalproject.videogamedialog.FrameYear
+import com.acasloa946.finalproject.videogamedialog.ImageVideogame
+import com.acasloa946.finalproject.videogamedialog.Salir
+import com.acasloa946.finalproject.videogamedialog.TextInfo
+import com.acasloa946.finalproject.videogamedialog.TextMetacritic
+import com.acasloa946.finalproject.videogamedialog.TextPlatforms
+import com.acasloa946.finalproject.videogamedialog.TextPrice
+import com.acasloa946.finalproject.videogamedialog.TextPublisher
+import com.acasloa946.finalproject.videogamedialog.TextTitle
+import com.acasloa946.finalproject.videogamedialog.TextYear
 import com.google.relay.compose.RelayText
 
 
-
-
-
 @Composable
-fun VideogameText1Component(modifier: Modifier = Modifier, textTitle1:String) {
+fun VideogameText1Component(modifier: Modifier = Modifier, textTitle1: String) {
     RelayText(
         content = textTitle1,
         fontSize = 20.0.sp,
@@ -73,18 +100,18 @@ fun VideogameText1Component(modifier: Modifier = Modifier, textTitle1:String) {
         height = 1.481999969482422.em,
         fontWeight = FontWeight(700.0.toInt()),
         maxLines = -1,
-        modifier = modifier.requiredWidth(277.0.dp).requiredHeight(25.0.dp)
+        modifier = modifier
+            .requiredWidth(277.0.dp)
+            .requiredHeight(25.0.dp)
     )
 }
-
-
 
 
 @Composable
 fun MainHomeScreenCompo(
     modifier: Modifier = Modifier,
     textTitle1: String = "",
-    textPrice1:String = "",
+    textPrice1: String = "",
     textPrice2: String = "",
     textTitle2: String = "",
     textTitleOffer: String = "",
@@ -127,7 +154,8 @@ fun MainHomeScreenCompo(
                     )
                 )
             )
-            VideogameText1Component(textTitle1 = textTitle1,
+            VideogameText1Component(
+                textTitle1 = textTitle1,
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.Center,
                     offset = DpOffset(
@@ -145,15 +173,21 @@ fun MainHomeScreenCompo(
                     )
                 )
             ) {
-                Column (
-                    modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
-                ){
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
 
                     SubcomposeAsyncImage(
-                        model = homeViewmodel.photo1,
+                        model = homeViewmodel.photoUL,
                         contentDescription = null,
                         loading = {
-                            androidx.compose.material.CircularProgressIndicator(modifier = Modifier.size(100.dp), color = Color(0xFF1ACE4D))
+                            androidx.compose.material.CircularProgressIndicator(
+                                modifier = Modifier.size(
+                                    100.dp
+                                ), color = Color(0xFF1ACE4D)
+                            )
                         }
                     )
                 }
@@ -167,19 +201,30 @@ fun MainHomeScreenCompo(
                     )
                 )
             ) {
-                Row (
-                    modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically
-                ){
-                    if (homeViewmodel.platforms1["ps5"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_ps), contentDescription = null)
+                Row(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    if (homeViewmodel.platformsUL["ps5"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_ps),
+                            contentDescription = null
+                        )
                     }
                     Spacer(modifier = Modifier.padding(10.dp))
-                    if (homeViewmodel.platforms1["xbox"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_xbox), contentDescription = null)
+                    if (homeViewmodel.platformsUL["xbox"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_xbox),
+                            contentDescription = null
+                        )
                     }
                     Spacer(modifier = Modifier.padding(10.dp))
-                    if (homeViewmodel.platforms1["nintendo"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_nintendo), contentDescription = null)
+                    if (homeViewmodel.platformsUL["nintendo"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_nintendo),
+                            contentDescription = null
+                        )
                     }
                 }
             }
@@ -234,15 +279,21 @@ fun MainHomeScreenCompo(
                     )
                 )
             ) {
-                Column (
-                    modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
-                ){
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
 
                     SubcomposeAsyncImage(
-                        model = homeViewmodel.photo2,
+                        model = homeViewmodel.photoMV,
                         contentDescription = null,
                         loading = {
-                            androidx.compose.material.CircularProgressIndicator(modifier = Modifier.size(100.dp), color = Color(0xFF1ACE4D))
+                            androidx.compose.material.CircularProgressIndicator(
+                                modifier = Modifier.size(
+                                    100.dp
+                                ), color = Color(0xFF1ACE4D)
+                            )
                         }
                     )
                 }
@@ -256,19 +307,30 @@ fun MainHomeScreenCompo(
                     )
                 )
             ) {
-                Row (
-                    modifier = Modifier.fillMaxSize(), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically
-                ){
-                    if (homeViewmodel.platforms2["ps5"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_ps), contentDescription = null)
+                Row(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    if (homeViewmodel.platformsMV["ps5"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_ps),
+                            contentDescription = null
+                        )
                     }
                     Spacer(modifier = Modifier.padding(10.dp))
-                    if (homeViewmodel.platforms2["xbox"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_xbox), contentDescription = null)
+                    if (homeViewmodel.platformsMV["xbox"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_xbox),
+                            contentDescription = null
+                        )
                     }
                     Spacer(modifier = Modifier.padding(10.dp))
-                    if (homeViewmodel.platforms2["nintendo"]==true) {
-                        Image(painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_nintendo), contentDescription = null)
+                    if (homeViewmodel.platformsMV["nintendo"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_nintendo),
+                            contentDescription = null
+                        )
                     }
                 }
             }
@@ -285,7 +347,27 @@ fun MainHomeScreenCompo(
                         y = 31.7393798828125.dp
                     )
                 )
-            ) {}
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+
+                    SubcomposeAsyncImage(
+                        model = homeViewmodel.photoOffer,
+                        contentDescription = null,
+                        loading = {
+                            androidx.compose.material.CircularProgressIndicator(
+                                modifier = Modifier.size(
+                                    100.dp
+                                ), color = Color(0xFF1ACE4D)
+                            )
+                        }
+                    )
+                }
+
+            }
             FrameTextTitleOffer(
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.Center,
@@ -329,6 +411,210 @@ fun MainHomeScreenCompo(
         }
         ButtonIniciarSesion(onCatalogClick = onCatalogClick) {
             VerCatLogo()
+        }
+    }
+}
+
+@Composable
+fun DialogVideogame(
+    homeViewmodel: HomeViewmodel,
+    textTitle0: String,
+    textMetacritic: String,
+    textTitle1: String,
+    textPublisher: String,
+    textYear: String,
+    textPrice: String,
+    textImage: String,
+    platforms: Map<String, Boolean>,
+    onBuyClick: () -> Unit,
+    onExitClick: () -> Unit
+) {
+    if (homeViewmodel.showVGDialog) {
+        Dialog(onDismissRequest = { homeViewmodel.closeVGDialog() }) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(847.dp)
+                    .background(Color(0xFFD9D9D9))
+                    .verticalScroll(rememberScrollState(10000), false, reverseScrolling = true),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                VideogameDialogComponent(
+                    modifier = Modifier.fillMaxWidth(),
+                    textTitle0,
+                    textMetacritic,
+                    textTitle1,
+                    textPublisher,
+                    textYear,
+                    textPrice,
+                    textImage = textImage,
+                    platforms,
+                    onBuyClick = {
+                        onBuyClick()
+                    },
+                    onExitClick = {
+                        onExitClick()
+                    })
+            }
+        }
+    }
+}
+
+
+@Composable
+fun VideogameDialogComponent(
+    modifier: Modifier = Modifier,
+    textTitle0: String = "",
+    textMetacritic: String = "",
+    textTitle1: String = "",
+    textPublisher: String = "",
+    textYear: String = "",
+    textPrice: String = "",
+    textImage: String = "",
+    platforms: Map<String, Boolean>,
+    onBuyClick: () -> Unit = {},
+    onExitClick: () -> Unit = {}
+) {
+    com.acasloa946.finalproject.videogamedialog.TopLevel(modifier = modifier) {
+        ImageVideogame {
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+
+                SubcomposeAsyncImage(
+                    model = textImage,
+                    contentDescription = null,
+                    loading = {
+                        androidx.compose.material.CircularProgressIndicator(
+                            modifier = Modifier.size(
+                                100.dp
+                            ), color = Color(0xFF1ACE4D)
+                        )
+                    }
+                )
+            }
+
+        }
+        com.acasloa946.finalproject.videogamedialog.VideogameText(textTitle0 = textTitle0)
+        FrameMetacritic {
+            TextMetacritic(
+                textMetacritic = textMetacritic,
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.TopStart,
+                    offset = DpOffset(
+                        x = 0.0.dp,
+                        y = -0.5.dp
+                    )
+                )
+            )
+        }
+        FrameInfo {
+            TextInfo()
+            TextTitle()
+            FrameTitle {
+                EditableTextTitle(
+                    textTitle1 = textTitle1,
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = -0.5.dp,
+                            y = 0.5.dp
+                        )
+                    )
+                )
+            }
+            TextPublisher()
+            FramePublisher {
+                EditableTextPublisher(
+                    textPublisher = textPublisher,
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = -0.5.dp,
+                            y = 0.5.dp
+                        )
+                    )
+                )
+            }
+            TextYear()
+            FrameYear {
+                EditableTextYear(
+                    textYear = textYear,
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = -0.5.dp,
+                            y = 0.5.dp
+                        )
+                    )
+                )
+            }
+            TextPrice()
+            FramePrice {
+                EditableTextPrice(
+                    textPrice = textPrice,
+                    modifier = Modifier.boxAlign(
+                        alignment = Alignment.Center,
+                        offset = DpOffset(
+                            x = -0.5.dp,
+                            y = 0.5.dp
+                        )
+                    )
+                )
+            }
+            TextPlatforms()
+            com.acasloa946.finalproject.videogamedialog.FramePlatforms {
+                Row(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    if (platforms["ps5"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_ps),
+                            contentDescription = null
+                        )
+                    }
+                    Spacer(modifier = Modifier.padding(10.dp))
+                    if (platforms["xbox"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_xbox),
+                            contentDescription = null
+                        )
+                    }
+                    Spacer(modifier = Modifier.padding(10.dp))
+                    if (platforms["nintendo"] == true) {
+                        Image(
+                            painter = painterResource(id = R.drawable.pantalla_admin_pl_vector_nintendo),
+                            contentDescription = null
+                        )
+                    }
+                }
+            }
+        }
+        BuyButton(onBuyClick = onBuyClick) {
+            Comprar(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = 0.0.dp,
+                        y = 0.0.dp
+                    )
+                )
+            )
+        }
+        ExitButton(onExitClick = onExitClick) {
+            Salir(
+                modifier = Modifier.boxAlign(
+                    alignment = Alignment.Center,
+                    offset = DpOffset(
+                        x = 0.0.dp,
+                        y = 0.0.dp
+                    )
+                )
+            )
         }
     }
 }

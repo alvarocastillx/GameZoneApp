@@ -60,7 +60,22 @@ fun HomeScreen(homeViewmodel: HomeViewmodel, navController: NavController) {
 
         ) {
             BannerHomeScreenFinal(modifier = Modifier.fillMaxWidth())
-            MainHomeScreenCompo(modifier = Modifier.size(430.dp,1372.dp),homeViewmodel = homeViewmodel, textTitle1 = homeViewmodel.title1, textPrice1 = homeViewmodel.price1,  textPrice2 = homeViewmodel.price2, textTitle2 = homeViewmodel.title2)
+            MainHomeScreenCompo(modifier = Modifier.size(430.dp,1372.dp),homeViewmodel = homeViewmodel, textTitle1 = homeViewmodel.titleUL, textPrice1 = homeViewmodel.priceUL,  textPrice2 = homeViewmodel.priceMV, textTitle2 = homeViewmodel.titleMV, textTitleOffer = homeViewmodel.titleOffer, textPriceOffer = homeViewmodel.priceOffer, onULClick = {
+                homeViewmodel.openVGDialog()
+                homeViewmodel.changeDialogText(title = homeViewmodel.titleUL, homeViewmodel.publisherUL, homeViewmodel.yearUL,homeViewmodel.metacriticUL,homeViewmodel.priceUL, homeViewmodel.photoUL, homeViewmodel.platformsUL)
+            },
+                onMVClick = {
+                    homeViewmodel.openVGDialog()
+                    homeViewmodel.changeDialogText(title = homeViewmodel.titleMV, homeViewmodel.publisherMV, homeViewmodel.yearMV,homeViewmodel.metacriticMV,homeViewmodel.priceMV, homeViewmodel.photoMV, homeViewmodel.platformsMV)
+                }, onOfferClick = {
+                    homeViewmodel.openVGDialog()
+                    homeViewmodel.changeDialogText(title = homeViewmodel.titleOffer, homeViewmodel.publisherOffer, homeViewmodel.yearOffer,homeViewmodel.metacriticOffer,homeViewmodel.priceOffer, homeViewmodel.photoOffer, homeViewmodel.platformsOffer)
+                })
+            DialogVideogame(homeViewmodel = homeViewmodel, textTitle1 = homeViewmodel.textTitle, textTitle0 = homeViewmodel.textTitle, textMetacritic = homeViewmodel.textMetacritic, textPrice = homeViewmodel.textPrice, textPublisher = homeViewmodel.textPublisher, textYear = homeViewmodel.textYear, textImage = homeViewmodel.textImage, platforms = homeViewmodel.platformsDialog, onBuyClick = {
+
+            }, onExitClick = {
+                homeViewmodel.closeVGDialog()
+            })
 
 
 

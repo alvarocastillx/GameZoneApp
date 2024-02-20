@@ -8,6 +8,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.acasloa946.finalproject.API.APIModule
+import com.acasloa946.finalproject.API.Models.APIVideogame
 import com.acasloa946.finalproject.database.Videogame
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.ktx.auth
@@ -52,17 +53,17 @@ init {
 
 }
 
-    suspend fun getPhotoVideogame(title:String):String{
-        var photo = ""
+    suspend fun getAPIVideogame(title:String):APIVideogame{
+        var APIVideogame : APIVideogame = APIVideogame("","",0)
         viewModelScope.launch {
             try {
-                photo = APIModule.getPhoto(title)
+                APIVideogame = APIModule.getAPIVideogame(title)
             }
             catch (e:Exception) {
                 Log.d("Error","Error inesperado ${e.message}")
             }
         }.join()
-        return photo
+        return APIVideogame
     }
 
     fun añadirBDD(title: String, publisher: String, year: Int, indie: Boolean, context: Context, price: String, platforms:MutableMap<String,Boolean>,
@@ -72,8 +73,8 @@ init {
             val db = FirebaseFirestore.getInstance()
             viewModelScope.launch {
                 try {
-                    val photo = getPhotoVideogame(title)
-                    val videogameToAdd = Videogame(title,publisher,year,indie,price,platforms, photo)
+                    val APIVideogame = getAPIVideogame(title)
+                    val videogameToAdd = Videogame(title,publisher,year,indie,price,platforms, metacritic = APIVideogame.metacritic ,photo = APIVideogame.background_image)
                     db.collection("Videogames").document(title).set(
                         videogameToAdd
                     ).addOnSuccessListener {
@@ -90,6 +91,8 @@ init {
             Log.e("MainActivity", "Firebase is not initialized")
         }
     }
+
+
 
 
 

@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 import retrofit2.HttpException
 
 class APIModule {
-    suspend fun getPhoto(title: String): String {
+    suspend fun getAPIVideogame(title: String): APIVideogame {
         val apiService = RetrofitInstance.api
 
         val listaVideogames: MutableState<List<APIVideogame>> = mutableStateOf(listOf())
@@ -33,9 +33,7 @@ class APIModule {
 
             }
         }.join()
-
-        val photo = listaVideogames.value[0].background_image
-        return photo
+        return listaVideogames.value[0]
     }
 }
 

@@ -9,6 +9,7 @@ class Videogame(
     var indie:Boolean? = false,
     var price:String?= null,
     var platforms : MutableMap<String,Boolean>? = null,
+    var metacritic : Int? = null,
     var photo:String? = null,
                 ) {
 
