@@ -39,8 +39,6 @@ class LoginViewmodel : ViewModel() {
     fun login(onSuccess: () -> Unit, onFailure : () -> Unit){
         viewModelScope.launch {
             try {
-                // DCS - Utiliza el servicio de autenticación de Firebase para validar al usuario
-                // por email y contraseña
                 auth.signInWithEmailAndPassword(email, passw)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {

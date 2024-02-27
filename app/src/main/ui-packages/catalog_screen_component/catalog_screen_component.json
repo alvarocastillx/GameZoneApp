@@ -1,0 +1,257 @@
+{
+  "name": "catalog_screen_component",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "236:75",
+    "version": "5197672370",
+    "component-id": "5b5a0d0fb7b000bc1efbb37cd77a655a8b35a408"
+  },
+  "default": "CatalogScreenComponent",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Frame Banner"
+      },
+      {
+        "type": "group",
+        "id": "FrameCatalogScreen"
+      },
+      {
+        "type": "image",
+        "id": "GameZoneIMG"
+      },
+      {
+        "type": "text",
+        "id": "CatalogText"
+      },
+      {
+        "type": "text",
+        "id": "AllVideoGamesText"
+      },
+      {
+        "type": "group",
+        "id": "FrameCards"
+      }
+    ],
+    "modes": {
+      "CatalogScreenComponent": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Frame Banner",
+              "FrameCatalogScreen"
+            ],
+            "item-spacing": "-48.0"
+          },
+          {
+            "id": "Frame Banner",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "430.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "195.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "GameZoneIMG"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            }
+          },
+          {
+            "id": "FrameCatalogScreen",
+            "padding": {
+              "left": "51.0",
+              "top": "23.0",
+              "right": "51.0",
+              "bottom": "23.0"
+            },
+            "border-radius": "55.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "429.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1420.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "main-axis-align": "start",
+            "children": [
+              "CatalogText",
+              "AllVideoGamesText",
+              "FrameCards"
+            ],
+            "item-spacing": "28.0",
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "0.0",
+                      "saturation": "0.0",
+                      "value": "0.8509803921568627"
+                    },
+                    "color-stop-position": "0.0"
+                  },
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "0.0",
+                      "saturation": "0.0",
+                      "value": "0.0"
+                    },
+                    "color-stop-position": "0.47"
+                  },
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "137.0",
+                      "saturation": "0.8737864077669903",
+                      "value": "0.807843137254902"
+                    },
+                    "color-stop-position": "0.95"
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": "0.5",
+                    "y": "0.0"
+                  },
+                  {
+                    "x": "0.5",
+                    "y": "1.0"
+                  },
+                  {
+                    "x": "0.0",
+                    "y": "0.0"
+                  }
+                ]
+              }
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "GameZoneIMG",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-27.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              }
+            },
+            "image-content": "game_zone_img.png",
+            "scale": "cover"
+          },
+          {
+            "id": "CatalogText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Catálogo",
+            "overflow": "visible",
+            "text-size": "30.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "AllVideoGamesText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Todos los videojuegos",
+            "overflow": "visible",
+            "text-size": "26.0",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameCards",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "389.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "is-structured": "false"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "CatalogScreenComponent",
+      "size": {
+        "width": 430.0,
+        "height": 1567.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

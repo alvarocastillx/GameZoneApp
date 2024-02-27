@@ -1,6 +1,5 @@
 package com.acasloa946.finalproject.userInterface.HomeScreen
 
-import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -22,13 +21,13 @@ class HomeViewmodel : ViewModel() {
 
 
     //LISTA DE VIDEOJUEGOS TRAIDOS DE FIREBASE, ÚLTIMOS LANZAMIENTOS
-    private val _fetchedUL = MutableStateFlow<List<Videogame>>(emptyList())
+    val fetchedUL = MutableStateFlow<List<Videogame>>(emptyList())
 
     //LISTA DE VIDEOJUEGOS TRAIDOS DE FIREBASE, MEJOR VALORADOS
     private val _fetchedMV = MutableStateFlow<List<Videogame>>(emptyList())
 
     //LISTA DE VIDEOJUEGOS TRAIDOS DE FIREBASE, OFERTAS
-    private val _fetchedOffers = MutableStateFlow<List<Videogame>>(emptyList())
+    val _fetchedOffers = MutableStateFlow<List<Videogame>>(emptyList())
 
 
     //////////////////////////////////////////////////////////////////////////
@@ -116,7 +115,7 @@ class HomeViewmodel : ViewModel() {
 
                         }
                     }
-                    _fetchedUL.value = videogames.shuffled()
+                    fetchedUL.value = videogames.shuffled()
                     _fetchedMV.value = videogames.shuffled()
                     _fetchedOffers.value = videogames.shuffled()
 
@@ -136,8 +135,8 @@ class HomeViewmodel : ViewModel() {
             var bool = true
             while (bool) {
                 //parte ultimos lanzamientos
-                if (!_fetchedUL.value.isEmpty()) {
-                    for (i in _fetchedUL.value) {
+                if (!fetchedUL.value.isEmpty()) {
+                    for (i in fetchedUL.value) {
                         photoUL = i.photo.toString()
                         titleUL = i.title.toString()
                         priceUL = i.price.toString()

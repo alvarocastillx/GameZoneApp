@@ -1,0 +1,161 @@
+{
+  "name": "frame_catalog_screen",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "231:221",
+    "version": "5190103199",
+    "component-id": "f1346a150d8b145457c7ce2b0ca5963f7b88fd16"
+  },
+  "default": "FrameCatalogScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "CatalogText"
+      },
+      {
+        "type": "text",
+        "id": "AllVideoGamesText"
+      },
+      {
+        "type": "group",
+        "id": "FrameCards"
+      }
+    ],
+    "modes": {
+      "FrameCatalogScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "51.0",
+              "top": "23.0",
+              "right": "51.0",
+              "bottom": "23.0"
+            },
+            "main-axis-align": "start",
+            "children": [
+              "CatalogText",
+              "AllVideoGamesText",
+              "FrameCards"
+            ],
+            "item-spacing": "28.0",
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "0.0",
+                      "saturation": "0.0",
+                      "value": "0.8509803921568627"
+                    },
+                    "color-stop-position": "0.0"
+                  },
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "0.0",
+                      "saturation": "0.0",
+                      "value": "0.0"
+                    },
+                    "color-stop-position": "0.5"
+                  },
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "145.53191489361703",
+                      "saturation": "1.0",
+                      "value": "0.9215686274509803"
+                    },
+                    "color-stop-position": "1.0"
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": "0.5",
+                    "y": "0.0"
+                  },
+                  {
+                    "x": "0.5",
+                    "y": "1.0"
+                  },
+                  {
+                    "x": "0.0",
+                    "y": "0.0"
+                  }
+                ]
+              }
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "CatalogText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Catálogo",
+            "overflow": "visible",
+            "text-size": "30.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "AllVideoGamesText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Todos los videojuegos",
+            "overflow": "visible",
+            "text-size": "26.0",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameCards",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "389.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "is-structured": "false"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "FrameCatalogScreen",
+      "size": {
+        "width": 429.0,
+        "height": 1436.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

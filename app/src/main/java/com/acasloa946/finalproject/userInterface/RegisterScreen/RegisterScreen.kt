@@ -44,6 +44,9 @@ import com.google.relay.compose.BoxScopeInstanceImpl.align
                     },
                     onHomeClick = {
                         navController.navigate(Routes.HomeScreen.route)
+                    },
+                    onCatalogClick = {
+                        navController.navigate(Routes.CatalogScreen.route)
                     })
 
             }

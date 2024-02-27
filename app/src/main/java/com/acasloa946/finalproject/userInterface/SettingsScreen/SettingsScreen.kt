@@ -42,6 +42,9 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
                     },
                     onHomeClick = {
                         navController.navigate(Routes.HomeScreen.route)
+                    },
+                    onCatalogClick = {
+                        navController.navigate(Routes.CatalogScreen.route)
                     })
             }
         }

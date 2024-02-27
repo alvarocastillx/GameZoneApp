@@ -6,6 +6,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.acasloa946.finalproject.userInterface.AdminScreen.AdminScreen
 import com.acasloa946.finalproject.userInterface.AdminScreen.ViewmodelAdmin
+import com.acasloa946.finalproject.userInterface.CatalogScreen.CatalogScreen
+import com.acasloa946.finalproject.userInterface.CatalogScreen.CatalogViewmodel
 import com.acasloa946.finalproject.userInterface.HomeScreen.HomeScreen
 import com.acasloa946.finalproject.userInterface.HomeScreen.HomeViewmodel
 import com.acasloa946.finalproject.userInterface.LoginScreen.LoginScreen
@@ -19,7 +21,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 @Composable
-fun NavigationManager(settingsViewmodel: SettingsViewmodel, viewmodelAdmin: ViewmodelAdmin, loginViewmodel: LoginViewmodel, homeViewmodel: HomeViewmodel, registerViewmodel:RegisterViewmodel) {
+fun NavigationManager(settingsViewmodel: SettingsViewmodel, viewmodelAdmin: ViewmodelAdmin, loginViewmodel: LoginViewmodel, homeViewmodel: HomeViewmodel, registerViewmodel:RegisterViewmodel, catalogViewmodel: CatalogViewmodel) {
 
     val navController = rememberNavController()
     val auth : FirebaseAuth = Firebase.auth
@@ -52,6 +54,9 @@ fun NavigationManager(settingsViewmodel: SettingsViewmodel, viewmodelAdmin: View
         }
         composable("RegisterScreen") {
             RegisterScreen(registerViewmodel = registerViewmodel, navController = navController)
+        }
+        composable("CatalogScreen") {
+            CatalogScreen(catalogViewmodel = catalogViewmodel, navController = navController)
         }
 
     }

@@ -6,6 +6,8 @@ sealed class Routes(var route:String) {
     object LoginScreen : Routes("LoginScreen")
     object HomeScreen : Routes("HomeScreen")
     object RegisterScreen : Routes("RegisterScreen")
+    object CatalogScreen : Routes("CatalogScreen")
+
 
 
 

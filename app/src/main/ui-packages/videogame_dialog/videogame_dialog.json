@@ -1,0 +1,896 @@
+{
+  "name": "videogame_dialog",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "226:81",
+    "version": "5181336231",
+    "component-id": "69bd8a0b67ec7c8a41f1e1e40eb2fc9150577693"
+  },
+  "default": "VideogameDialog",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "ImageVideogame"
+      },
+      {
+        "type": "text",
+        "id": "VideogameText"
+      },
+      {
+        "type": "group",
+        "id": "FrameMetacritic"
+      },
+      {
+        "type": "group",
+        "id": "FrameInfo"
+      },
+      {
+        "type": "group",
+        "id": "BuyButton"
+      },
+      {
+        "type": "group",
+        "id": "ExitButton"
+      },
+      {
+        "type": "text",
+        "id": "TextMetacritic"
+      },
+      {
+        "type": "text",
+        "id": "TextInfo"
+      },
+      {
+        "type": "text",
+        "id": "TextTitle"
+      },
+      {
+        "type": "group",
+        "id": "FrameTitle"
+      },
+      {
+        "type": "text",
+        "id": "TextPublisher"
+      },
+      {
+        "type": "group",
+        "id": "FramePublisher"
+      },
+      {
+        "type": "text",
+        "id": "TextYear"
+      },
+      {
+        "type": "group",
+        "id": "FrameYear"
+      },
+      {
+        "type": "text",
+        "id": "TextPrice"
+      },
+      {
+        "type": "group",
+        "id": "FramePrice"
+      },
+      {
+        "type": "text",
+        "id": "TextPlatforms"
+      },
+      {
+        "type": "group",
+        "id": "FramePlatforms"
+      },
+      {
+        "type": "text",
+        "id": "EditableTextTitle"
+      },
+      {
+        "type": "text",
+        "id": "EditableTextPublisher"
+      },
+      {
+        "type": "text",
+        "id": "EditableTextYear"
+      },
+      {
+        "type": "text",
+        "id": "EditableTextPrice"
+      },
+      {
+        "type": "text",
+        "id": "Comprar"
+      },
+      {
+        "type": "text",
+        "id": "Salir"
+      }
+    ],
+    "modes": {
+      "VideogameDialog": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "83.0",
+              "top": "60.0",
+              "right": "83.0",
+              "bottom": "60.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "children": [
+              "ImageVideogame",
+              "VideogameText",
+              "FrameMetacritic",
+              "FrameInfo",
+              "BuyButton",
+              "ExitButton"
+            ],
+            "item-spacing": "15.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "ImageVideogame",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "212.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "VideogameText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$textTitle0",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "20.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameMetacritic",
+            "border-radius": "17.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "TextMetacritic"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameInfo",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "TextInfo",
+              "TextTitle",
+              "FrameTitle",
+              "TextPublisher",
+              "FramePublisher",
+              "TextYear",
+              "FrameYear",
+              "TextPrice",
+              "FramePrice",
+              "TextPlatforms",
+              "FramePlatforms"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "BuyButton",
+            "border-radius": "15.0",
+            "tap-handler": "$onBuyClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Comprar"
+            ]
+          },
+          {
+            "id": "ExitButton",
+            "border-radius": "15.0",
+            "tap-handler": "$onExitClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Salir"
+            ]
+          },
+          {
+            "id": "TextMetacritic",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "57.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$textMetacritic",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "20.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextInfo",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Información sobre el videojuego",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextTitle",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Título",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameTitle",
+            "border-radius": "13.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "EditableTextTitle"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextPublisher",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Publisher",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FramePublisher",
+            "border-radius": "13.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "EditableTextPublisher"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextYear",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Año de publicación",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FrameYear",
+            "border-radius": "13.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "EditableTextYear"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextPrice",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Precio",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FramePrice",
+            "border-radius": "13.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "EditableTextPrice"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextPlatforms",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Plataformas",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.4819999422345842",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "FramePlatforms",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "EditableTextTitle",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textTitle1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "EditableTextPublisher",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textPublisher",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "EditableTextYear",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textYear",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "EditableTextPrice",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "145.53191489361703",
+              "saturation": "1.0",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "$textPrice",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "letter-spacing": "1.43",
+            "line-height": "1.4820000575138972",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "Comprar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Comprar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "Salir",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "192.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Salir",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "17.0",
+            "line-height": "1.4820000143612133",
+            "typeface": "Oswald"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "textTitle0": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "onBuyClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onExitClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "textMetacritic": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textTitle1": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textPublisher": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textYear": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textPrice": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "VideogameDialog",
+      "size": {
+        "width": 358.0,
+        "height": 856.0
+      },
+      "parameters": {
+        "textTitle0": "Videogame",
+        "textMetacritic": "77",
+        "textTitle1": "title",
+        "textPublisher": "publisher",
+        "textYear": "year",
+        "textPrice": "price"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

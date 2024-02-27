@@ -1,0 +1,290 @@
+{
+  "name": "offer_card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "vuG2uyu0RqUFMoxqGM8x2w",
+    "node": "251:206",
+    "version": "5198830663",
+    "component-id": "0b1f5dc68f90bf2a2caf70b18f2c81e1b9e19aab"
+  },
+  "default": "OfferCard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "FrameImage"
+      },
+      {
+        "type": "group",
+        "id": "FramePrice"
+      },
+      {
+        "type": "group",
+        "id": "FrameTitle"
+      },
+      {
+        "type": "text",
+        "id": "TextPrice"
+      },
+      {
+        "type": "text",
+        "id": "TextTitle"
+      }
+    ],
+    "modes": {
+      "OfferCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "25.0",
+            "tap-handler": "$onGameClick",
+            "stroke-width": "3.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
+            },
+            "is-structured": "false",
+            "children": [
+              "FrameImage",
+              "FramePrice",
+              "FrameTitle"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameImage",
+            "border-radius": "22.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "184.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "224.0"
+              }
+            },
+            "is-structured": "false",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "FramePrice",
+            "border-radius": "40.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "84.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "TextPrice"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
+            }
+          },
+          {
+            "id": "FrameTitle",
+            "border-radius": "40.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-84.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.0"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "TextTitle"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "137.0",
+              "saturation": "0.8737864077669903",
+              "value": "0.807843137254902"
+            }
+          },
+          {
+            "id": "TextPrice",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-3.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$textPrice",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "20.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          },
+          {
+            "id": "TextTitle",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-3.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$textTitle",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "20.0",
+            "line-height": "1.481999969482422",
+            "typeface": "Oswald"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onGameClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "textPrice": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "textTitle": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "OfferCard",
+      "size": {
+        "width": 192.0,
+        "height": 230.0
+      },
+      "parameters": {
+        "textPrice": "20,00€",
+        "textTitle": "Videogame"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

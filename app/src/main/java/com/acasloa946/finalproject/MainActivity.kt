@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import com.acasloa946.finalproject.navigation.NavigationManager
 import com.acasloa946.finalproject.ui.theme.FinalProjectTheme
 import com.acasloa946.finalproject.userInterface.AdminScreen.ViewmodelAdmin
+import com.acasloa946.finalproject.userInterface.CatalogScreen.CatalogViewmodel
 import com.acasloa946.finalproject.userInterface.HomeScreen.HomeViewmodel
 import com.acasloa946.finalproject.userInterface.LoginScreen.LoginViewmodel
 import com.acasloa946.finalproject.userInterface.RegisterScreen.RegisterViewmodel
@@ -33,6 +34,8 @@ class MainActivity : ComponentActivity() {
         val loginViewmodel: LoginViewmodel by viewModels()
         val homeViewmodel: HomeViewmodel by viewModels()
         val registerViewmodel: RegisterViewmodel by viewModels()
+        val catalogViewmodel: CatalogViewmodel by viewModels()
+
 
 
 
@@ -47,7 +50,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 
-                        NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel)
+                    NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel,catalogViewmodel)
 
 
                 }
