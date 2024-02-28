@@ -1,5 +1,9 @@
 package com.acasloa946.finalproject.API
 
+
+/**
+ * Clase con constantes que se utilizan pora API
+ */
 class const {
     companion object {
         const val BASE_URL = "https://api.rawg.io/api/"

@@ -1,0 +1,378 @@
+[
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_vector1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_vector1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_bold_italic.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_bold_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_square.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_square.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_caja_mv.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_caja_mv.xml"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_linea_separaotia_box1.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_linea_separaotia_box1.xml"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_caja_mv.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_caja_mv.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_linea_separaotia_box2.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_linea_separaotia_box2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_line_3.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_line_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_linea_separaotia_box1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_linea_separaotia_box1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_caja_ul.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_caja_ul.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_banner_home_screen_imggamezone.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\banner_home_screen_imggamezone.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_nintendo.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\nintendo.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_pantalla_admin_pl_vector_ps.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\pantalla_admin_pl_vector_ps.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_linea_separaotia_box2.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_linea_separaotia_box2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_info_dialog_text_box_mail.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\info_dialog_text_box_mail.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_frame_settings_not_logged_line.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\frame_settings_not_logged_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_line2.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_line2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_bold.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_info_dialog_user_vector.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\info_dialog_user_vector.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_bold.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_ps5.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\ps5.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_medium.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_medium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_regular.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_black.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_settings_icon.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_settings_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_register_screen_imggamezone.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\register_screen_imggamezone.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_semibold.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_line_3.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_line_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_line_3.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_line_3.xml"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_game_zone_img.png.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_game_zone_img.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_linea_separaotia_box2.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_linea_separaotia_box2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_linea_separaotia_box1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_linea_separaotia_box1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_rectangle_1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_rectangle_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_caja_ul.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_caja_ul.xml"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_line_4.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_line_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_info_dialog_user_image.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\info_dialog_user_image.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_rectangle_1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_rectangle_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_regular.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_light.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_caja_ul.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_caja_ul.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_caja_mv.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_caja_mv.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_bannerhomescreen.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\bannerhomescreen.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_light_italic.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_light_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_black_italic.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_black_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_register_screen_wallpaper.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\register_screen_wallpaper.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_vector_icon.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_vector_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_login_screen_wallpaper.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\login_screen_wallpaper.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_light.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_button_catalog.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_button_catalog.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_oswald_extralight.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_oswald_extralight.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_caja_mv.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_caja_mv.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_merriweather_italic.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_merriweather_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_banner_home_screen_final_imggamezone.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\banner_home_screen_final_imggamezone.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\font_relay_mogra_regular.ttf.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\font\\relay_mogra_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_linea_separaotia_box2.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_linea_separaotia_box2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_catalog_screen_component_game_zone_img.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\catalog_screen_component_game_zone_img.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_rectangle_1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_rectangle_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_final_linea_separaotia_box1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_final_linea_separaotia_box1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_xbox.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\xbox.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable_userimage.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\drawable\\userimage.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_vector2.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_vector2.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_info_dialog_vector.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\info_dialog_vector.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_banner_settings_wall_paper.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\banner_settings_wall_paper.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_caja_ul.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_caja_ul.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_pantalla_admin_pl_line_1.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\pantalla_admin_pl_line_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_pantalla_admin_pl_vector_nintendo.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\pantalla_admin_pl_vector_nintendo.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_info_dialog_text_box_username.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\info_dialog_text_box_username.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_login_screen_imggamezone.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\login_screen_imggamezone.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_pantalla_admin_pl_vector_xbox.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\pantalla_admin_pl_vector_xbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_footer_nav_bar_line3.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\footer_nav_bar_line3.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_banner_home_screen_final_wallpaper.png.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\banner_home_screen_final_wallpaper.png"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-main-67:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.acasloa946.finalproject.app-merged_res-65:/drawable-nodpi_home_screen_line_3.xml.flat",
+        "source": "com.acasloa946.finalproject.app-relay-61:/drawable-nodpi/home_screen_line_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-merged_res-65:\\drawable-nodpi_main_home_screen_comp_line_4.xml.flat",
+        "source": "C:\\Users\\AlvaroPC\\.gradle\\daemon\\8.2\\com.acasloa946.finalproject.app-relay-61:\\drawable-nodpi\\main_home_screen_comp_line_4.xml"
+    }
+]

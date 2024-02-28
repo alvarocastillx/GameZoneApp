@@ -9,7 +9,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 
+
+/**
+ * Clase APIModule que contiene la función que nos rescata el videojuego de la API.
+ */
 class APIModule {
+
+    /**
+     * Función que nos rescata 1 videojuego de la API en función del nombre con el que nosotros queramos añadir al videojuego en el panel de administrador.
+     *
+     */
     suspend fun getAPIVideogame(title: String): APIVideogame {
         val apiService = RetrofitInstance.api
 

@@ -21,10 +21,14 @@ import com.acasloa946.finalproject.footernavbar.FooterNavBar
 import com.acasloa946.finalproject.navigation.Routes
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
+/**
+ * Funciñon composable de la screen settings
+ */
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavController){
 
+    //Ejecuta función recurrentemente para comprobar si el usuario ha iniciado sesión o no.
     LaunchedEffect(true) {
         settingsViewmodel.getLogged()
     }
@@ -36,6 +40,7 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
                     .fillMaxWidth()
                     .padding(start = 11.dp, bottom = 20.dp)
             ) {
+                //llamada a funciñon de barra de navegación
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
                         navController.navigate(Routes.SettingsScreeen.route)
@@ -49,7 +54,7 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
             }
         }
     ) {
-        // Contenido de tu pantalla principal
+        // Columna principal
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -57,6 +62,7 @@ fun SettingsScreen(settingsViewmodel: SettingsViewmodel, navController: NavContr
             horizontalAlignment = Alignment.CenterHorizontally
 
         ) {
+            //Llamada a banner y componentes dependiendo si el usuario ha iniciado sesión o no.
             BannerSettings(modifier = Modifier.size(430.dp, 89.dp))
             if (settingsViewmodel.logged) {
                 FrameSettingsLoggedFinalComponent(modifier = Modifier.fillMaxWidth().padding(bottom = 70.dp), settingsViewmodel = settingsViewmodel, onInfoClick = {

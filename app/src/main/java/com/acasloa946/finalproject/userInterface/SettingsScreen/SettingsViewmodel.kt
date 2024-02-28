@@ -12,11 +12,11 @@ import com.google.firebase.ktx.Firebase
 
 class SettingsViewmodel : ViewModel()  {
 
-
+    //variables de firebase
     val firestore = Firebase.firestore
-
     val auth: FirebaseAuth = Firebase.auth
 
+    //variables mutables de Screen
     var checkBoxNotification by mutableStateOf(false)
     var showInfoDialog by mutableStateOf(false)
     var userMail:String? by mutableStateOf("")
@@ -24,10 +24,13 @@ class SettingsViewmodel : ViewModel()  {
 
 
 
-
+    //variable para conocer si el usuario ha iniciado sesión y mostrar así un componente u otro.
     var logged by mutableStateOf(false)
         private set
 
+    /**
+     * Función para saber si hay un usuario con sesión iniciada. Si es así muestra composable y llama a función de rescatar info para poder mostrarla en el dialog de Información de cuenta.
+     */
     fun getLogged(){
         if (auth.currentUser?.email != null) {
             logged = true
@@ -35,6 +38,9 @@ class SettingsViewmodel : ViewModel()  {
         }
     }
 
+    /**
+     * Función para extraer la información de la cuenta del usuario
+     */
     fun getUserInfo() {
 
         userMail = auth.currentUser!!.email
@@ -59,6 +65,7 @@ class SettingsViewmodel : ViewModel()  {
             }
     }
 
+    //Funciones para cambiar screen
     fun changeCheckbox(it:Boolean) {
         this.checkBoxNotification = it
     }

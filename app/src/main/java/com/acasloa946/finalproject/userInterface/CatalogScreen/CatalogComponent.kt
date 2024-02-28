@@ -69,6 +69,10 @@ import com.google.relay.compose.RelayContainer
 import com.google.relay.compose.RelayContainerScope
 
 
+/**
+ * Componentes de la pantalla Catalog. En los diferentes frames contiene los textfields, imagenes, etc.
+ */
+
 @SuppressLint("StateFlowValueCalledInComposition", "UnrememberedMutableState")
 @Composable
 fun CatalogScreenComponentFinal(

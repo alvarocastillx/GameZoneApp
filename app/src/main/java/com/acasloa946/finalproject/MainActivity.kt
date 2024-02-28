@@ -19,16 +19,18 @@ import com.acasloa946.finalproject.userInterface.RegisterScreen.RegisterViewmode
 import com.acasloa946.finalproject.userInterface.SettingsScreen.SettingsViewmodel
 import com.google.firebase.FirebaseApp
 
-
+/**
+ * Función MainActivity
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Initialize Firebase only if not already initialized
         if (FirebaseApp.getApps(this).isEmpty()) {
             FirebaseApp.initializeApp(this)
         }
+        //todos los viewmodel de las pantallas
         val viewmodelAdmin: ViewmodelAdmin by viewModels()
         val settingsViewmodel: SettingsViewmodel by viewModels()
         val loginViewmodel: LoginViewmodel by viewModels()
@@ -36,20 +38,25 @@ class MainActivity : ComponentActivity() {
         val registerViewmodel: RegisterViewmodel by viewModels()
         val catalogViewmodel: CatalogViewmodel by viewModels()
 
+       /*
 
+            IMPORTANTE
+            SI SE QUIERE INICIAR SESIÓN COMO ADMINISTRADOR
+            EMAIL: ADMIN@ADMIN.COM
+            PASSW: ADMIN11
 
+        */
 
 
 
 
         setContent {
             FinalProjectTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    //Llamada a función que controla navegación
                     NavigationManager(settingsViewmodel = settingsViewmodel, viewmodelAdmin = viewmodelAdmin, loginViewmodel,homeViewmodel,registerViewmodel,catalogViewmodel)
 
 

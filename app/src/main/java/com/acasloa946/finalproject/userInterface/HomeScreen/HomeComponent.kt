@@ -6,13 +6,10 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredHeight
-import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -25,11 +22,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.em
-import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import coil.compose.SubcomposeAsyncImage
 import com.acasloa946.finalproject.R
@@ -37,39 +31,7 @@ import com.acasloa946.finalproject.homescreen.FrameBanner
 import com.acasloa946.finalproject.homescreen.GameZoneIMG
 import com.acasloa946.finalproject.homescreen.MainHomeScreenComp2
 import com.acasloa946.finalproject.homescreen.VideogameText1
-import com.acasloa946.finalproject.infodialog.InfoDialog
-import com.acasloa946.finalproject.mainhomescreencomp.ButtonIniciarSesion
-import com.acasloa946.finalproject.mainhomescreencomp.CajaMV
-import com.acasloa946.finalproject.mainhomescreencomp.CajaUL
-import com.acasloa946.finalproject.mainhomescreencomp.FrameOffers
-import com.acasloa946.finalproject.mainhomescreencomp.FramePlatforms
-import com.acasloa946.finalproject.mainhomescreencomp.FramePlatforms1
-import com.acasloa946.finalproject.mainhomescreencomp.FrameTextPriceOffer
-import com.acasloa946.finalproject.mainhomescreencomp.FrameTextTitleOffer
-import com.acasloa946.finalproject.mainhomescreencomp.FrameVideoGameImage
-import com.acasloa946.finalproject.mainhomescreencomp.Line3
-import com.acasloa946.finalproject.mainhomescreencomp.Line4
-import com.acasloa946.finalproject.mainhomescreencomp.LineaSeparaotiaBox1
-import com.acasloa946.finalproject.mainhomescreencomp.LineaSeparaotiaBox2
-import com.acasloa946.finalproject.mainhomescreencomp.MejorValoradosBox
-import com.acasloa946.finalproject.mainhomescreencomp.Rectangle1
-import com.acasloa946.finalproject.mainhomescreencomp.Square
-import com.acasloa946.finalproject.mainhomescreencomp.TextMejorValorados
-import com.acasloa946.finalproject.mainhomescreencomp.TextOffers
-import com.acasloa946.finalproject.mainhomescreencomp.TextPriceOffer
-import com.acasloa946.finalproject.mainhomescreencomp.TextTitleOffer
-import com.acasloa946.finalproject.mainhomescreencomp.TextUltLanzamientos
-import com.acasloa946.finalproject.mainhomescreencomp.TopLevel
-import com.acasloa946.finalproject.mainhomescreencomp.UltimosLanzamientosBox
-import com.acasloa946.finalproject.mainhomescreencomp.VerCatLogo
-import com.acasloa946.finalproject.mainhomescreencomp.VideogameImage
-import com.acasloa946.finalproject.mainhomescreencomp.VideogameImage1
-import com.acasloa946.finalproject.mainhomescreencomp.VideogamePrice
-import com.acasloa946.finalproject.mainhomescreencomp.VideogamePrice2
-import com.acasloa946.finalproject.mainhomescreencomp.VideogameText
-import com.acasloa946.finalproject.mainhomescreencomp.oswald
 import com.acasloa946.finalproject.offercard.FrameImage
-import com.acasloa946.finalproject.offercard.OfferCard
 import com.acasloa946.finalproject.videogamedialog.BuyButton
 import com.acasloa946.finalproject.videogamedialog.Comprar
 import com.acasloa946.finalproject.videogamedialog.EditableTextPrice
@@ -92,10 +54,12 @@ import com.acasloa946.finalproject.videogamedialog.TextPrice
 import com.acasloa946.finalproject.videogamedialog.TextPublisher
 import com.acasloa946.finalproject.videogamedialog.TextTitle
 import com.acasloa946.finalproject.videogamedialog.TextYear
-import com.google.relay.compose.RelayText
 
 
-
+/**
+ * Componentes de la pantalla Home
+ * Parametros de precio y titulo de cada card (Ultimos lanzamientos y mejor valorados), onClick de cada una, y click de botón ver catálogo
+ */
 
 @Composable
 fun HomeScreenComponent(

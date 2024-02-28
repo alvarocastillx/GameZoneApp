@@ -20,13 +20,30 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
+/**
+ * Función que se ejecuta en el main activity utilizada para la navegación entre views.
+ * @param settingsViewmodel: viewmodel de la pantalla settings
+ * @param viewmodelAdmin: viewmodel del panel de administrador
+ * @param loginViewmodel: viewmodel de la pantalla login
+ * @param homeViewmodel: viewmodel de la pantalla home
+ * @param registerViewmodel: viewmodel de la pantalla register
+ * @param catalogViewmodel: viewmodel de la pantalla de catálogo
+ */
 @Composable
 fun NavigationManager(settingsViewmodel: SettingsViewmodel, viewmodelAdmin: ViewmodelAdmin, loginViewmodel: LoginViewmodel, homeViewmodel: HomeViewmodel, registerViewmodel:RegisterViewmodel, catalogViewmodel: CatalogViewmodel) {
+
+
 
     val navController = rememberNavController()
     val auth : FirebaseAuth = Firebase.auth
     val admin = auth.currentUser?.email
     var startDestination = ""
+
+
+    // Si la aplicación se inicia con la sesión iniciada como administrador, saldrá el panel.
+    // IMPORTANTE: PARA INICIAR SESIÓN EN LA PANTALLA DE ADMINISTRADOR ES ADMIN@ADMIN.COM Y CONTRASEÑA ADMIN11
+    // PARA CERRAR SESIÓN UNA VEZ DENTRO HAY QUE PULSA EL BOTON DE INDIE Y REINICIAR LA APLICACIÓN.
 
     if (admin=="admin@admin.com") {
         startDestination = "AdminScreen"

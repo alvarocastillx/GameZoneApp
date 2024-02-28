@@ -33,6 +33,9 @@ import com.acasloa946.finalproject.registerscreen.TextRegister
 import com.acasloa946.finalproject.registerscreen.TopLevel
 import com.acasloa946.finalproject.registerscreen.Wallpaper
 
+/**
+ * Función composable de la pantalla de registro
+ */
 @Composable
 fun RegisterScreenComponent(
     modifier: Modifier = Modifier,

@@ -5,6 +5,11 @@ import com.acasloa946.finalproject.API.const.Companion.ENDPOINT
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+
+/**
+ * interface que contiene la función con la que llamamos directamente a la API. Devuelve APIResponse.
+ * Utilizamos todas las querys que queramos hacer en nuestra llamada.
+ */
 interface ApiService {
     @GET(ENDPOINT)
     suspend fun getResultByName(

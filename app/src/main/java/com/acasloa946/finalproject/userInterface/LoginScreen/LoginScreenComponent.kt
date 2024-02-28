@@ -27,12 +27,8 @@ import com.acasloa946.finalproject.loginscreen.TopLevel
 import com.acasloa946.finalproject.loginscreen.Wallpaper
 
 
-
-/*
-
-
-
-
+/**
+ * Función composable de la pantalla Login
  */
 
 @Composable

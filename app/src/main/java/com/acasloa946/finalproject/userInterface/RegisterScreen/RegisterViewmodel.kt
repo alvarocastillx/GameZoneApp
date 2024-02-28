@@ -14,10 +14,11 @@ import kotlinx.coroutines.launch
 
 class RegisterViewmodel : ViewModel() {
 
+    //Funciones de firebase
     private val auth: FirebaseAuth = Firebase.auth
     private val firestore = Firebase.firestore
 
-
+    //variables de los textfields de la screen
     var username by mutableStateOf("")
         private set
     var email by mutableStateOf("")
@@ -25,6 +26,9 @@ class RegisterViewmodel : ViewModel() {
     var passw by mutableStateOf("")
         private set
 
+    /**
+     * Función que se ejecuta cuando se pulsa el botón de registrar. Si se registra con éxito se guarda el usuario en la BDD
+     */
     fun registerUser(onSuccess : () -> Unit,
                      onFailure:() -> Unit) {
         viewModelScope.launch {
@@ -44,6 +48,10 @@ class RegisterViewmodel : ViewModel() {
 
     }
 
+    /**
+     * Función para guardar usuario en la base de datos cuando se ha podido registrar correctamente
+     * @param userToAdd: usuario para guardar el bdd creado con username e email introducido en screen
+     */
     fun saveUser(userToAdd:User) {
         viewModelScope.launch {
             firestore.collection("Users").document(email).set(userToAdd).addOnCompleteListener {
@@ -54,6 +62,7 @@ class RegisterViewmodel : ViewModel() {
         }
 
     }
+    //funciones para cambiar textfields
     fun changeEmail(email:String) {
         this.email = email
     }

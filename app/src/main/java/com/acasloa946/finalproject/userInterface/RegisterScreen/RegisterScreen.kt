@@ -21,6 +21,9 @@ import com.acasloa946.finalproject.footernavbar.FooterNavBar
 import com.acasloa946.finalproject.navigation.Routes
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
+/**
+ * Función de la pantalla de registro
+ */
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
     fun RegisterScreen(registerViewmodel: RegisterViewmodel, navController: NavController) {
@@ -38,6 +41,7 @@ import com.google.relay.compose.BoxScopeInstanceImpl.align
                         bottom = 20.dp
                     )
             ) {
+                //Llamada a función de barra de navegación
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
                         navController.navigate(Routes.SettingsScreeen.route)
@@ -52,13 +56,14 @@ import com.google.relay.compose.BoxScopeInstanceImpl.align
             }
         }
     ) {
-        // Contenido de tu pantalla principal
+        //C0lumna principal
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState(10000), false, reverseScrolling = true),
             horizontalAlignment = Alignment.CenterHorizontally,
             ) {
+            //Llamada al componente principal de la pantalla de registro
             RegisterScreenComponent(modifier = Modifier.size(430.dp,886.dp), registerViewmodel = registerViewmodel, onRegisterClick = {
                 registerViewmodel.registerUser(onSuccess = {
                     Toast.makeText(context,"Cuenta creada correctamente.",Toast.LENGTH_SHORT).show()

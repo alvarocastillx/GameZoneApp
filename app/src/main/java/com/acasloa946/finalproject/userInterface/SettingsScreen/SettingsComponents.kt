@@ -29,6 +29,9 @@ import com.acasloa946.finalproject.framesettingsnotlogged.Line
 import com.acasloa946.finalproject.framesettingsnotlogged.Registrarse
 import com.acasloa946.finalproject.framesettingsnotlogged.TopLevel
 
+/**
+ * Función composable de pantalla settings cuando el usuario no esta logeado
+ */
 @Composable
 fun FrameSettingsNotLoggedComponent(
     modifier: Modifier = Modifier,
@@ -70,6 +73,10 @@ fun FrameSettingsNotLoggedComponent(
         }
     }
 }
+
+/**
+ * Función composable para cuando el usuario si esta logueado
+ */
 @Composable
 fun FrameSettingsLoggedFinalComponent(
     modifier: Modifier = Modifier,
@@ -108,6 +115,9 @@ fun FrameSettingsLoggedFinalComponent(
 }
 
 
+/**
+ * Función composable de dialog para mostrar información de cuenta
+ */
 @Composable
 fun InfoDialog(settingsViewmodel: SettingsViewmodel, onAcceptClick : () -> Unit, textEmail:String, textUser:String) {
     if (settingsViewmodel.showInfoDialog) {

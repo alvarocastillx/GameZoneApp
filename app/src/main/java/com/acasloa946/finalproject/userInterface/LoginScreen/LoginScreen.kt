@@ -21,6 +21,9 @@ import com.acasloa946.finalproject.footernavbar.FooterNavBar
 import com.acasloa946.finalproject.navigation.Routes
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
+/**
+ * Función de la pantalla login
+ */
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
@@ -37,7 +40,7 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
                     .padding(
                         start = 11.dp,
                         bottom = 20.dp
-                    ) // Ajusta la cantidad de espacio según tus necesidades
+                    )
             ) {
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
@@ -53,7 +56,7 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
             }
         }
     ) {
-        // Contenido de tu pantalla principal
+        // Columna principal de la pantalla
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -61,6 +64,7 @@ fun LoginScreen(loginViewmodel: LoginViewmodel, navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
 
         ) {
+            //Llamada al componente LoginScreen
             LoginScreenComponent(modifier = Modifier.size(430.dp, 866.dp), loginViewmodel = loginViewmodel, onLoginClick = {
                 loginViewmodel.login(onSuccess = {
                     if (loginViewmodel.admin){

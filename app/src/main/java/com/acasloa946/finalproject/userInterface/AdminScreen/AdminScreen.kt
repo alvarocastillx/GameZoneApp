@@ -47,6 +47,11 @@ import com.acasloa946.finalproject.pantallaadminpl.VectorXbox
 import com.acasloa946.finalproject.pantallaadminpl.XboxLogo
 
 
+/**
+ * Función de la pantalla de administrador
+ * @param viewmodelAdmin: viewmodeladmin
+ * @param navController: controlador de navegación para acceder a otras views.
+ */
 @Composable
 fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
     val name = viewmodelAdmin.name
@@ -71,7 +76,7 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-
+            //Llama a la función de la pantalla de administrador y le pasa las variables y funciones necesarias
             PantallaAdminComponent(modifier = Modifier.size(430.dp,1105.dp), onSaveClick = {
                 viewmodelAdmin.añadirBDD(name, publisher, year, indie, context,price,platforms, onSuccess = {
                     Toast.makeText(
@@ -112,10 +117,17 @@ fun AdminScreen(viewmodelAdmin: ViewmodelAdmin, navController: NavController) {
 }
 
 
-
-
-
-
+/**
+ * Componente de la pantalla de administrador.
+ * @param modifier: modificador de composable
+ * @param onSaveClick: función lambda para cuando se pulsa el botón guardar
+ * @param name: nombre del videojuego
+ * @param publisher: publisher del videojuego
+ * @param year: año del videojuego
+ * @param indie: indica si el videojuego es indie o no
+ * @param price: precio del videojuego
+ * @param viewmodelAdmin
+ */
 @Composable
 fun PantallaAdminComponent(
     modifier: Modifier = Modifier,

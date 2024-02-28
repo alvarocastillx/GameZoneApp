@@ -17,16 +17,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.acasloa946.finalproject.bannerhomescreenfinal.BannerHomeScreenFinal
 import com.acasloa946.finalproject.footernavbar.FooterNavBar
 import com.acasloa946.finalproject.navigation.Routes
 import com.google.relay.compose.BoxScopeInstanceImpl.align
 
+
+/**
+ * Función de la screen principal
+ */
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun HomeScreen(homeViewmodel: HomeViewmodel, navController: NavController) {
-
-
 
     Scaffold(modifier = Modifier.align(Alignment.BottomCenter),
         bottomBar = {
@@ -38,6 +39,7 @@ fun HomeScreen(homeViewmodel: HomeViewmodel, navController: NavController) {
                         bottom = 20.dp
                     )
             ) {
+                //Llamada a función de barra de navegación
                 FooterNavBar(modifier = Modifier.size(392.dp, 66.dp),
                     onSettingsClick = {
                         navController.navigate(Routes.SettingsScreeen.route)
@@ -52,7 +54,7 @@ fun HomeScreen(homeViewmodel: HomeViewmodel, navController: NavController) {
             }
         }
     ) {
-        // Contenido de tu pantalla principal
+        //Columna principal de la pantalla
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -62,8 +64,7 @@ fun HomeScreen(homeViewmodel: HomeViewmodel, navController: NavController) {
 
 
         ) {
-
-
+            //Llamada a componente principal de la pantalla. Le envia las variables necesarias que saca de viewmodel
             HomeScreenComponent(modifier = Modifier.fillMaxWidth(),homeViewmodel = homeViewmodel, textTitle1 = homeViewmodel.titleUL, textPrice1 = homeViewmodel.priceUL,  textPrice2 = homeViewmodel.priceMV, textTitle2 = homeViewmodel.titleMV, onULClick = {
                 homeViewmodel.openVGDialog()
                 homeViewmodel.changeDialogText(title = homeViewmodel.titleUL, homeViewmodel.publisherUL, homeViewmodel.yearUL,homeViewmodel.metacriticUL,homeViewmodel.priceUL, homeViewmodel.photoUL, homeViewmodel.platformsUL)

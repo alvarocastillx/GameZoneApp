@@ -17,10 +17,15 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
+
+/**
+ * Viewmodel de la pantalla de administrador
+ */
 class ViewmodelAdmin : ViewModel() {
 
-
+//variable para llamar a api
     val APIModule = APIModule()
+    //funciones extraidas de la pantalla para guardar el base de datos.
     var name by mutableStateOf("")
         private set
     var publisher by mutableStateOf("")
@@ -32,7 +37,7 @@ class ViewmodelAdmin : ViewModel() {
 
     var price by mutableStateOf("")
         private set
-
+        //plataformas
     var ps5 by mutableStateOf(false)
         private set
 
@@ -44,6 +49,7 @@ class ViewmodelAdmin : ViewModel() {
 
     val platforms = mutableMapOf<String,Boolean>("ps5" to ps5,"xbox" to xbox,"nintendo" to nintendo)
 
+    //variable autenticacion de firebase
     val auth = Firebase.auth
 
 
@@ -52,7 +58,10 @@ init {
 
 
 }
-
+    /**
+     *  Función para extraer un APIVideogame y utilizar las variables para crear un Videogame que guardar en BDD.
+     *  Extrae APIVideogame según el titulo que se introduzca en la pantalla de administrador. Se llama desde añadirBDD
+     */
     suspend fun getAPIVideogame(title:String):APIVideogame{
         var APIVideogame : APIVideogame = APIVideogame("","",0)
         viewModelScope.launch {
@@ -65,6 +74,19 @@ init {
         }.join()
         return APIVideogame
     }
+
+    /**
+     * Función para añadir el videojuego a la base de datos. Se llama desde la screen
+     * @param title: titulo introducido
+     * @param publisher: publisher introducido
+     * @param year: año introducido
+     * @param indie: indie introducido
+     * @param context: contexto actual de la aplicación
+     * @param price: precio introducido
+     * @param platforms: map de plataformas que se han introducido
+     * @param onSuccess: función lambda para cuando se añade el videojuego correctamente.
+     * @param onFailure: función lambda para cuando no se añade el videojuego correctamente.
+     */
 
     fun añadirBDD(title: String, publisher: String, year: Int, indie: Boolean, context: Context, price: String, platforms:MutableMap<String,Boolean>,
                   onSuccess : () -> Unit, onFailure : () -> Unit) {
@@ -96,7 +118,7 @@ init {
 
 
 
-
+    //Funciones para cambiar cosas en la Screen
 
     fun changeIndie(indieUI : Boolean) {
         this.indie = indieUI

@@ -14,8 +14,12 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
+/**
+ * Clase viewmodel de la pantalla home
+ */
 class HomeViewmodel : ViewModel() {
 
+    //Variables firebase
     private val auth: FirebaseAuth = Firebase.auth
     private val firestore = Firebase.firestore
 
@@ -100,6 +104,10 @@ class HomeViewmodel : ViewModel() {
         fetchVideogames()
     }
 
+    /**
+     * Función que devuelve todos los videojuegos de la colección "Videogames" de la base de datos Firebase firestore.
+     */
+
     fun fetchVideogames() {
         viewModelScope.launch {
             firestore.collection("Videogames")
@@ -115,11 +123,12 @@ class HomeViewmodel : ViewModel() {
 
                         }
                     }
+                    //A las 3 listas se la asigna videogames pero mezcladas.
                     fetchedUL.value = videogames.shuffled()
                     _fetchedMV.value = videogames.shuffled()
                     _fetchedOffers.value = videogames.shuffled()
 
-
+                    //Inicializa las funciones que cargan las cards.
                     loadVideogamesUL()
                     loadVideogamesMV()
                     loadVideogamesOffers()
@@ -129,7 +138,9 @@ class HomeViewmodel : ViewModel() {
     }
 
 
-
+    /**
+     * Función que controla la card "Últimos lanzamientos" Cada 15 segundos el videojuego cambia.
+     */
     fun loadVideogamesUL() {
         viewModelScope.launch {
             var bool = true
@@ -156,6 +167,10 @@ class HomeViewmodel : ViewModel() {
 
         }
     }
+
+    /**
+     * Función que controla la card "Mejor valorados" Cada 15 segundos el videojuego cambia.
+     */
     fun loadVideogamesMV() {
         //parte mejor valorados
         viewModelScope.launch {
@@ -181,7 +196,9 @@ class HomeViewmodel : ViewModel() {
 
         }
         }
-
+    /**
+     * Función que controla la card "Ofertas" Cada 15 segundos el videojuego cambia.
+     */
     fun loadVideogamesOffers() {
         viewModelScope.launch {
             var bool = true
@@ -206,7 +223,7 @@ class HomeViewmodel : ViewModel() {
 
         }
     }
-
+    //Funciones que abre y cierra dialogo
     fun openVGDialog() {
         showVGDialog = true
     }
@@ -214,6 +231,9 @@ class HomeViewmodel : ViewModel() {
         showVGDialog = false
     }
 
+    /**
+     * Función que cambia las variables del dialog.
+     */
     fun changeDialogText(title:String, publisher:String, year:String, metacritic:String,price:String,image:String, platforms: Map<String,Boolean>) {
         textTitle = title
         textPublisher = publisher
