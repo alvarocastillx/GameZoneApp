@@ -312,7 +312,8 @@ fun HomeScreenComponent(
                     items(homeViewmodel._fetchedOffers.value) {
                         OfferCardComponent(textPrice = it.price!!, textTitle = it.title!!, textImage = it.photo!!,
                             onGameClick = {
-                                
+                                homeViewmodel.openVGDialog()
+                                homeViewmodel.changeDialogText(title = it.title!!, it.publisher!!, it.year.toString(),it.metacritic.toString(),it.price!!, it.photo!!, it.platforms!!)
                             })
                     }
                 }
